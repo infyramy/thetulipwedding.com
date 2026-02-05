@@ -226,7 +226,7 @@ const Packages: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/KHR-30.jpg"
+            src="/assets/IMG_9575.jpg"
             alt="Packages Header Background"
             className="w-full h-full object-cover opacity-60"
           />
@@ -284,10 +284,10 @@ const Packages: React.FC = () => {
 
           {/* Footer Note - Moved Here */}
           <div className="text-center mb-12 max-w-2xl mx-auto">
-            <div className="bg-white border border-pink-100 p-4 rounded-xl shadow-sm flex items-start gap-3 text-left md:items-center">
-              <Star className="w-5 h-5 text-pink-400 shrink-0 mt-0.5 md:mt-0" />
-              <p className="text-gray-600 text-xs">
-                <strong>Nota:</strong> Harga adalah anggaran awal dan boleh berubah mengikut tarikh, lokasi, dan add-ons. Hubungi kami untuk sebut harga rasmi (Quotation).
+            <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-xl shadow-sm flex items-start gap-3 text-left md:items-center">
+              <Star className="w-5 h-5 text-yellow-500 fill-yellow-500 shrink-0 mt-0.5 md:mt-0" />
+              <p className="text-gray-700 text-xs leading-relaxed">
+                <strong>PENTING:</strong> Harga yang dipaparkan adalah <strong>harga permulaan</strong> (starting price). Pakej boleh disesuaikan dengan penambahan servis (add-ons). Hubungi kami untuk perincian dan sebut harga rasmi.
               </p>
             </div>
           </div>

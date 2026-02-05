@@ -33,7 +33,8 @@ const Home: React.FC = () => {
       ],
       link: "/packages",
       linkText: "Lihat Detail",
-      locations: ["Rumah", "Kanopi", "Dewan"]
+      locations: ["Rumah", "Kanopi", "Dewan"],
+      image: "https://placehold.co/600x400/fae8ff/86198f?text=Bridal+Collection"
     },
     {
       title: "Bridal + Katering",
@@ -50,7 +51,8 @@ const Home: React.FC = () => {
       ],
       link: "/packages",
       linkText: "Lihat Pakej",
-      locations: ["Rumah", "Kanopi"]
+      locations: ["Rumah", "Kanopi"],
+      image: "https://placehold.co/600x400/ecfccb/3f6212?text=Katering+Kanopi"
     },
     {
       title: "Bridal + Katering + Dewan",
@@ -67,7 +69,8 @@ const Home: React.FC = () => {
       ],
       link: "/hall",
       linkText: "Lihat Dewan",
-      locations: ["Dewan"]
+      locations: ["Dewan"],
+      image: "https://placehold.co/600x400/f3f4f6/be185d?text=Grand+Dewan"
     }
   ];
 
@@ -107,7 +110,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto mb-16">
             <div className="w-full md:w-1/2 text-center md:text-left">
               <span className="text-pink-600 font-bold tracking-widest uppercase text-sm mb-3 block">Koleksi Pakej 2026</span>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal mb-4 tracking-tight">Pakej Perkahwinan Lengkap & Fleksibel</h2>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-charcoal mb-4 tracking-tight">Pakej Perkahwinan Lengkap & Fleksibel</h2>
               <p className="text-gray-600 text-lg font-light leading-relaxed">
                 Untuk rumah, kanopi & dewan — ikut bajet dan jumlah tetamu.
               </p>
@@ -142,6 +145,12 @@ const Home: React.FC = () => {
                   : 'bg-white text-charcoal shadow-xl border border-gray-100 hover:shadow-2xl hover:shadow-pink-100'
                   }`}
               >
+                {/* Image Area */}
+                <div className="h-48 overflow-hidden relative">
+                  <div className={`absolute inset-0 z-10 ${index === 1 ? 'bg-black/20' : 'bg-black/10 group-hover:bg-transparent'} transition-colors duration-300`}></div>
+                  <img src={pkg.image} alt={pkg.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                </div>
+
                 {/* Header */}
                 <div className="p-8 pb-0">
                   <h3 className={`font-serif text-2xl font-bold leading-tight mb-4 ${index === 1 ? 'text-white' : 'text-charcoal'}`}>
@@ -270,9 +279,9 @@ const Home: React.FC = () => {
           >
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
               <img
-                src="https://placehold.co/1000x800/f3f4f6/be185d?text=Dewan+Wedding"
+                src="/assets/IMG_9603.jpg"
                 alt="Dewan Wedding"
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-1000"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-md px-6 py-4 rounded-xl shadow-lg border border-white/50 max-w-xs">
                 <p className="font-serif italic text-charcoal text-lg">"Servis tiptop, makanan sedap. Tetamu puji."</p>

@@ -48,11 +48,24 @@ interface MapProps {
 const FitBounds: React.FC<{ halls: Hall[] }> = ({ halls }) => {
     const map = useMap();
 
+
     useEffect(() => {
         if (!halls || halls.length === 0) return;
 
         const bounds = L.latLngBounds(halls.map(h => [h.coordinates.lat, h.coordinates.lng]));
-        map.fitBounds(bounds, { padding: [50, 50] });
+
+        const fitMap = () => {
+            map.fitBounds(bounds, { padding: [50, 50] });
+        };
+
+        fitMap(); // Initial fit
+
+        // Re-fit when popup resets/closes implies user is done interacting with specific pin
+        map.on('popupclose', fitMap);
+
+        return () => {
+            map.off('popupclose', fitMap);
+        };
     }, [halls, map]);
 
     return null;

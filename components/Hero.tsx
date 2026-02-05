@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import { ArrowDown, MessageCircle, Award } from 'lucide-react';
 import { WHATSAPP_NUMBER } from '../constants';
 
 const HERO_IMAGES = [
   "/assets/KHR-30.jpg",
-  "/assets/KHR-421.jpg",
-  "/assets/MSY_9176.jpg",
-  "/assets/MSY_9182.jpg",
+  "/assets/K7300415.jpg",
+  "/assets/AIMN9527.jpg",
   "/assets/MSY_9586.jpg"
 ];
 
@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
                 Semak Tarikh 2026
               </Button>
             </a>
-            <a href="/packages" className="w-full sm:w-auto">
+            <Link to="/packages" className="w-full sm:w-auto">
               <Button
                 size="lg"
                 variant="outline"
@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
               >
                 Lihat Katalog Pakej
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

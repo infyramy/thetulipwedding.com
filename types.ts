@@ -35,7 +35,7 @@ export interface Hall {
   address?: string;
   priceRange: string;
   facilities: string[];
-  image: string;
+  images: string[];
   coordinates: { lat: number; lng: number };
 }
 

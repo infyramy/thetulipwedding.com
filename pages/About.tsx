@@ -188,11 +188,6 @@ const About: React.FC = () => {
                       <Calendar size={18} className="mr-2 text-pink-600" /> Set Temujanji
                     </Button>
                   </a>
-                  <a href="https://maps.google.com/?q=The+Tulip+Wedding" target="_blank" rel="noreferrer">
-                    <Button size="lg" variant="outline-white" className="w-full sm:w-auto border-white/20 text-white hover:bg-white/10">
-                      <MapPin size={18} className="mr-2" /> Lokasi Butik
-                    </Button>
-                  </a>
                 </div>
               </div>
 
@@ -201,7 +196,7 @@ const About: React.FC = () => {
                   <div className="absolute inset-0 border border-white/5 rounded-full animate-ping opacity-20"></div>
                   <div className="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 text-center transform rotate-6 hover:rotate-0 transition-transform duration-500">
                     <Coffee size={40} className="text-pink-400 mx-auto mb-3" />
-                    <p className="text-white font-serif text-xl italic">"Bincang santai sambil minum kopi."</p>
+                    <p className="text-white font-serif text-xl italic">"Konsultasi tanpa tekanan, janji mesra."</p>
                   </div>
                 </div>
               </div>
