@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Tulip Weddings - Premium Batu Pahat Wedding & Hall</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontSize: {
+              'base': ['1.05rem', '1.65rem'],
+              'lg': ['1.2rem', '1.85rem'],
+              '7xl': ['4.5rem', '1'],
+              '8xl': ['6rem', '1'],
+            },
+            colors: {
+              // The Tulip Identity 2026: Pink, White, Black
+              primary: '#FFF0F5', // Lavender Blush
+              primaryDark: '#BE185D', // Pink-700
+              pinkAccent: '#F472B6', // Pink-400 (Softer)
+              charcoal: '#121212', // Lifted Black (Graphite)
+              charcoalLight: '#1E1E1E', // Lighter Gray for cards
+              surface: '#FFFFFF',
+              silver: '#F8F9FA', 
+              gold: '#D4AF37',
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'], 
+              sans: ['"Outfit"', 'sans-serif'], 
+            },
+            backgroundImage: {
+              'noise': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPjxmaWx0ZXIgaWQ9J25vaXNlJz48ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgYmFzZUZyZXF1ZW5jeT0nMC44JyBudW1PY3RhdmVzPScxJyBzdGl0Y2hUaWxlcz0nc3RpdGNoJy8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsdGVyPSd1cmwoI25vaXNlKScgb3BhY2l0eT0nMC4wNScuanNvbiIvPjwvc3ZnPg==')",
+              'grid-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E\")",
+            },
+            container: {
+              center: true,
+              padding: '1.5rem',
+              screens: {
+                sm: '640px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1280px',
+                '2xl': '1400px',
+              },
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'zoom-slow': 'zoomSlow 20s linear infinite alternate',
+              'pulse-glow': 'pulseGlow 2s infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'spin-slow': 'spin 12s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              zoomSlow: {
+                '0%': { transform: 'scale(1)' },
+                '100%': { transform: 'scale(1.15)' },
+              },
+              pulseGlow: {
+                '0%, 100%': { boxShadow: '0 0 0 0 rgba(236, 72, 153, 0.7)' },
+                '70%': { boxShadow: '0 0 0 15px rgba(236, 72, 153, 0)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            },
+            boxShadow: {
+              'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.1)',
+              'glow': '0 0 30px rgba(236, 72, 153, 0.3)',
+              'card': '0 20px 40px -15px rgba(0, 0, 0, 0.15)',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #FAFAFA;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #121212;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #EC4899;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #BE185D;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.0.8",
+    "framer": "https://aistudiocdn.com/framer@^2.4.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="font-sans text-charcoal bg-silver antialiased selection:bg-pinkAccent selection:text-white overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 456.00000000000006 2345 816" width="2345" height="816">
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #fff8f8 } 
+		.s1 { fill: #f1f1f1;stroke: #c2c2c2;stroke-miterlimit:10;stroke-width: 10 } 
+		.t2 { font-size: 149px;fill: #ffffff;font-weight: 400;font-family: "PlayfairDisplay-Regular", "Playfair Display" } 
+		.t3 { font-size: 38px;fill: #ffffff;font-family: "Montserrat Roman" } 
+	</style>
+	<g id="Layer 1">
+	</g>
+	<g id="LOGO">
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s0" d="m1972.6 493.47c0 0-45.17 37.42-0.99 101.84 0 0 43.33-59.64 0.99-101.84z"/>
+			<path id="&lt;Path&gt;" class="s1" d="m86.91 1054.44h2217.34"/>
+			<text id="THE TULIP" style="transform: matrix(2.911,0,0,2.911,84,929.617)">
+				<tspan x="0" y="0" class="t2" dx="0 2 2 2 2 2 2 2 2 2" >THE TULIP
+</tspan>
+			</text>
+			<text id="WEDDING &amp; EVENTS" style="transform: matrix(2.911,0,0,2.911,127.046,1215.767)">
+				<tspan x="0" y="0" class="t3" dx="0 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22" >WEDDING &amp; EVENTS
+</tspan>
+			</text>
+		</g>
+	</g>
+</svg>

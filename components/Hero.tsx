@@ -1,0 +1,108 @@
+import React, { useState, useEffect } from 'react';
+import Button from './Button';
+import { ArrowDown, MessageCircle, Award } from 'lucide-react';
+import { WHATSAPP_NUMBER } from '../constants';
+
+const HERO_IMAGES = [
+  "/assets/KHR-30.jpg",
+  "/assets/KHR-421.jpg",
+  "/assets/MSY_9176.jpg",
+  "/assets/MSY_9182.jpg",
+  "/assets/MSY_9586.jpg"
+];
+
+const Hero: React.FC = () => {
+  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20The%20Tulip%20Weddings,%20saya%20berminat%20nak%20tahu%20pakej%20terkini%202026!`;
+
+  // Initialize with a randomized order
+  const [shuffledImages] = useState(() => [...HERO_IMAGES].sort(() => Math.random() - 0.5));
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % shuffledImages.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [shuffledImages]);
+
+  return (
+    <div className="relative h-[100svh] w-full overflow-hidden flex items-center justify-center bg-charcoal pb-32 md:pb-40">
+      {/* Cinematic Background Slideshow */}
+      <div className="absolute inset-0 z-0">
+        {/* Dark overlay for perfect text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/80 z-20"></div>
+
+        {shuffledImages.map((src, index) => (
+          <div
+            key={src}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+              }`}
+          >
+            <img
+              src={src}
+              alt="The Tulip Wedding Moment"
+              className="w-full h-full object-cover object-center animate-zoom-slow"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Content */}
+      <div className="relative z-30 container mx-auto px-4 text-center text-white">
+        <div className="max-w-5xl mx-auto flex flex-col items-center animate-fade-in-up">
+
+          {/* Authority Tagline - Slightly smaller vertical padding */}
+          <div className="inline-flex items-center gap-2 px-5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs md:text-sm tracking-[0.15em] uppercase font-semibold text-white mb-6 hover:bg-white/20 transition-colors cursor-default shadow-lg">
+            <Award size={14} className="text-pink-400" />
+            <span>Pakar Perkahwinan Premium Johor</span>
+          </div>
+
+          {/* Headline - Scaled Down (was 5xl/7xl/9xl -> now 4xl/6xl/8xl) */}
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl font-bold leading-[1.1] tracking-tight drop-shadow-2xl mb-6">
+            Pesona Cinta <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-200 via-white to-pink-200 italic">
+              Raja Sehari
+            </span>
+          </h1>
+
+          {/* Subheadline - Scaled Down & tighter margin */}
+          <p className="font-sans text-sm md:text-lg text-gray-100 leading-relaxed max-w-2xl mx-auto font-light tracking-wide drop-shadow-lg mb-10 opacity-95">
+            Pakar pengurusan majlis perkahwinan lengkap di Batu Pahat & seluruh Johor. <br className="hidden md:block" />
+            <span className="font-semibold text-pink-200">Dewan • Katering • Busana • Pelamin</span> — Semua di bawah satu bumbung.
+          </p>
+
+          {/* CTA Buttons - Slightly reduced padding */}
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center w-full sm:w-auto">
+            <a href={waLink} target="_blank" rel="noreferrer" className="w-full sm:w-auto group">
+              <Button
+                size="lg"
+                variant="white"
+                className="w-full sm:w-auto border-none px-8 py-4 text-base shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:shadow-[0_0_40px_rgba(219,39,119,0.5)] rounded-full font-bold tracking-wide transition-all duration-500"
+              >
+                <MessageCircle className="mr-2 inline-block" size={18} />
+                Semak Tarikh 2026
+              </Button>
+            </a>
+            <a href="/packages" className="w-full sm:w-auto">
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full sm:w-auto border-white/40 text-white hover:bg-white/10 hover:border-white px-8 py-4 text-base backdrop-blur-sm rounded-full tracking-wide"
+              >
+                Lihat Katalog Pakej
+              </Button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator - Moved higher to avoid overlap with the next section card */}
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 animate-bounce text-white/70">
+        <ArrowDown size={28} strokeWidth={1} />
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
