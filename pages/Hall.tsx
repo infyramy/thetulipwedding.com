@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from '../components/Section';
 import HallCard from '../components/HallCard';
+import Map from '../components/Map';
 import { HALLS } from '../constants';
 
 const Hall: React.FC = () => {
@@ -47,9 +48,8 @@ const Hall: React.FC = () => {
           <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-xl font-light">
             Dewan kami terletak di lokasi strategik Batu Pahat, mudah diakses dari lebuhraya dan dikelilingi kemudahan penginapan untuk tetamu jauh.
           </p>
-          <div className="w-full h-96 bg-gray-100 rounded-[2.5rem] overflow-hidden flex items-center justify-center text-gray-400 border border-gray-200 relative">
-            <div className="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:20px_20px] opacity-50"></div>
-            <span className="relative bg-white px-6 py-3 rounded-xl shadow-sm font-bold text-charcoal">Google Maps Integration Area</span>
+          <div className="w-full h-96 bg-gray-100 rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-200 relative">
+            <Map halls={HALLS} />
           </div>
         </div>
       </Section>

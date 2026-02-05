@@ -36,6 +36,7 @@ export interface Hall {
   priceRange: string;
   facilities: string[];
   image: string;
+  coordinates: { lat: number; lng: number };
 }
 
 export interface GalleryItem {

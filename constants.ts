@@ -1,7 +1,7 @@
 import { Package, Testimonial, Vendor, Hall, GalleryItem } from './types';
 
 export const APP_NAME = "The Tulip Weddings";
-export const WHATSAPP_NUMBER = "60127707912"; 
+export const WHATSAPP_NUMBER = "60127707912";
 export const CONTACT_EMAIL = "thetulipweddings@gmail.com";
 
 export const SOCIAL_LINKS = {
@@ -22,7 +22,7 @@ export const NAV_LINKS = [
 
 // Reliable Placeholder Images
 const IMG_HERO = "https://placehold.co/1920x1080/1a1a1a/ffffff?text=The+Tulip+Weddings";
-const IMG_VILLA = "https://placehold.co/1000x800/2d2d2d/ffffff?text=Villa+Kemboja+Hall"; 
+const IMG_VILLA = "https://placehold.co/1000x800/2d2d2d/ffffff?text=Villa+Kemboja+Hall";
 const IMG_DEWAN = "https://placehold.co/1000x800/f3f4f6/be185d?text=Grand+Dewan+Setup";
 const IMG_KANOPI = "https://placehold.co/1000x800/ecfccb/3f6212?text=Outdoor+Canopy+Setup";
 const IMG_BRIDAL = "https://placehold.co/1000x800/fae8ff/86198f?text=Bridal+Collection";
@@ -90,7 +90,7 @@ export const PACKAGES: Package[] = [
     image: IMG_DEWAN,
     category: 'Full',
   },
-  
+
   // --- KANOPI ---
   {
     id: 'p_kanopi_d',
@@ -194,6 +194,7 @@ export const HALLS: Hall[] = [
     priceRange: 'Pakej Bermula RM 22,000',
     facilities: ['5 Bilik Tidur Family', 'Dewan Aircond', 'Parking Luas', 'Surau', 'Bilik Persalinan'],
     image: IMG_VILLA,
+    coordinates: { lat: 1.8494, lng: 102.9288 },
   },
   {
     id: 'h_grand',
@@ -204,6 +205,7 @@ export const HALLS: Hall[] = [
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Full Aircond', 'Stage 40ft', 'VIP Holding Room', 'Sistem PA'],
     image: IMG_DEWAN,
+    coordinates: { lat: 1.8667, lng: 103.1167 },
   },
   {
     id: 'h_laman',
@@ -214,6 +216,7 @@ export const HALLS: Hall[] = [
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Dewan Terbuka Eksklusif', 'Ruang Makan Selesa', 'Parking Tetamu', 'Surau & Bilik Persalinan'],
     image: IMG_LAMAN,
+    coordinates: { lat: 1.8548, lng: 102.9229 },
   },
   {
     id: 'h_glass',
@@ -224,6 +227,7 @@ export const HALLS: Hall[] = [
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Konsep Unik & Moden', 'Full Aircond', 'Lighting Ambience', 'Spot OOTD Viral'],
     image: IMG_GLASS,
+    coordinates: { lat: 2.0305, lng: 103.3168 },
   },
   {
     id: 'h_barokah',
@@ -234,6 +238,7 @@ export const HALLS: Hall[] = [
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Suasana Desa Damai', 'Dewan Luas', 'Parking Mudah', 'Surau'],
     image: IMG_BAROKAH,
+    coordinates: { lat: 1.8500, lng: 102.9300 },
   },
 ];
 

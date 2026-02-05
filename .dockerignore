@@ -1,0 +1,10 @@
+node_modules
+.git
+.DS_Store
+dist
+dist-ssr
+coverage
+.env
+.env.local
+.env.*
+!.env.example
