@@ -321,7 +321,7 @@ const Home: React.FC = () => {
 
               <div className="xl:ml-auto mt-4 xl:mt-0">
                 <a href={waLink} target="_blank" rel="noreferrer">
-                  <Button size="md" className="bg-[#121212] text-white hover:bg-pink-600 border-none px-6 py-3 rounded-full shadow-lg">
+                  <Button size="md" className="bg-[#121212] text-white hover:bg-pink-600 border-none px-6 py-3 rounded-full shadow-lg whitespace-nowrap">
                     <MessageCircle size={18} className="mr-2" /> Hubungi Konsultan Kami
                   </Button>
                 </a>
