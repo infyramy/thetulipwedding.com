@@ -227,6 +227,13 @@
     ::-webkit-scrollbar-thumb:hover {
       background: #BE185D;
     }
+
+    /* Hide pre-rendered SEO content from users, but keep for crawlers */
+    #root>*:not(script) {
+      opacity: 0;
+      position: absolute;
+      pointer-events: none;
+    }
   </style>
   <script type="importmap">
 {
