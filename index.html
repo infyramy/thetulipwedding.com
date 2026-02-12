@@ -228,11 +228,17 @@
       background: #BE185D;
     }
 
-    /* Hide pre-rendered SEO content from users, but keep for crawlers */
-    #root>*:not(script) {
-      opacity: 0;
+    /* Screen reader only - hides visually but accessible to crawlers */
+    .sr-only {
       position: absolute;
-      pointer-events: none;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
     }
   </style>
   <script type="importmap">
@@ -255,147 +261,155 @@
   class="font-sans text-charcoal bg-silver antialiased selection:bg-pinkAccent selection:text-white overflow-x-hidden">
   <div id="root">
     <!-- Pre-rendered content for SEO crawlers. React replaces this on load. -->
-    <header>
-      <nav aria-label="Main navigation">
-        <a href="/" title="The Tulip Weddings - Utama"><img src="/assets/LOGO THE TULIP AI (1).svg"
-            alt="The Tulip Weddings Logo - Perancang Perkahwinan Premium Batu Pahat" width="120" height="48"></a>
-        <ul>
-          <li><a href="/" title="Utama">Utama</a></li>
-          <li><a href="/about" title="Tentang Kami">Tentang Kami</a></li>
-          <li><a href="/packages" title="Pakej Perkahwinan">Pakej</a></li>
-          <li><a href="/hall" title="Dewan Perkahwinan">Dewan</a></li>
-          <li><a href="/contact" title="Hubungi Kami">Hubungi</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="sr-only">
+      <header>
+        <nav aria-label="Main navigation">
+          <a href="/" title="The Tulip Weddings - Utama"><img src="/assets/LOGO THE TULIP AI (1).svg"
+              alt="The Tulip Weddings Logo - Perancang Perkahwinan Premium Batu Pahat" width="120" height="48"></a>
+          <ul>
+            <li><a href="/" title="Utama">Utama</a></li>
+            <li><a href="/about" title="Tentang Kami">Tentang Kami</a></li>
+            <li><a href="/packages" title="Pakej Perkahwinan">Pakej</a></li>
+            <li><a href="/hall" title="Dewan Perkahwinan">Dewan</a></li>
+            <li><a href="/contact" title="Hubungi Kami">Hubungi</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <section>
-        <h1>The Tulip Weddings – Perancang Perkahwinan Premium di Batu Pahat, Johor</h1>
-        <p>Selamat datang ke The Tulip Weddings, perancang perkahwinan terkemuka di Batu Pahat, Johor. Kami menyediakan
-          pakej perkahwinan lengkap termasuk dewan, katering, pelamin, busana pengantin dan makeup profesional. Harga
-          berpatutan dengan perkhidmatan berkualiti tinggi untuk menjadikan majlis impian anda satu realiti.</p>
-        <img src="/assets/FHP_0022.jpg" alt="Majlis perkahwinan premium di The Tulip Weddings Batu Pahat" width="800"
-          height="533" loading="lazy">
-      </section>
-
-      <section>
-        <h2>Pakej Perkahwinan Lengkap Batu Pahat</h2>
-        <p>Kami menawarkan pelbagai pakej perkahwinan yang sesuai untuk semua bajet. Daripada pakej asas hingga pakej
-          premium all-in, setiap pakej direka khas untuk memenuhi keperluan pengantin moden.</p>
-
-        <article>
-          <h3>Pakej Villa Kemboja – Premium All-In</h3>
-          <p>Pakej premium untuk 500-1000 tetamu termasuk dewan eksklusif Villa Kemboja, penginapan keluarga (check-in
-            Jumaat, check-out Ahad), katering lengkap dengan nasi beriani/bukhari, pelamin dewan standard (30x16ft),
-            busana lelaki dan perempuan termasuk makeup nikah dan sanding. Harga bermula RM 22,000 - RM 28,980.</p>
-          <img src="/assets/KHR-272.jpg" alt="Dewan Villa Kemboja - Pakej perkahwinan premium Batu Pahat" width="800"
+      <main>
+        <section>
+          <h1>The Tulip Weddings – Perancang Perkahwinan Premium di Batu Pahat, Johor</h1>
+          <p>Selamat datang ke The Tulip Weddings, perancang perkahwinan terkemuka di Batu Pahat, Johor. Kami
+            menyediakan
+            pakej perkahwinan lengkap termasuk dewan, katering, pelamin, busana pengantin dan makeup profesional. Harga
+            berpatutan dengan perkhidmatan berkualiti tinggi untuk menjadikan majlis impian anda satu realiti.</p>
+          <img src="/assets/FHP_0022.jpg" alt="Majlis perkahwinan premium di The Tulip Weddings Batu Pahat" width="800"
             height="533" loading="lazy">
-        </article>
+        </section>
 
-        <article>
-          <h3>Pakej Dewan Laman Puteri</h3>
-          <p>Dewan yang selesa dan strategik di Batu Pahat, sesuai untuk majlis perkahwinan sederhana. Pakej termasuk
-            katering, pelamin dan perkhidmatan profesional.</p>
-        </article>
+        <section>
+          <h2>Pakej Perkahwinan Lengkap Batu Pahat</h2>
+          <p>Kami menawarkan pelbagai pakej perkahwinan yang sesuai untuk semua bajet. Daripada pakej asas hingga pakej
+            premium all-in, setiap pakej direka khas untuk memenuhi keperluan pengantin moden.</p>
 
-        <article>
-          <h3>Pakej Dewan Barokah Sri Village</h3>
-          <p>Suasana kampung yang indah dengan kemudahan moden. Sesuai untuk majlis yang intim dan bermakna.</p>
-        </article>
+          <article>
+            <h3>Pakej Villa Kemboja – Premium All-In</h3>
+            <p>Pakej premium untuk 500-1000 tetamu termasuk dewan eksklusif Villa Kemboja, penginapan keluarga (check-in
+              Jumaat, check-out Ahad), katering lengkap dengan nasi beriani/bukhari, pelamin dewan standard (30x16ft),
+              busana lelaki dan perempuan termasuk makeup nikah dan sanding. Harga bermula RM 22,000 - RM 28,980.</p>
+            <img src="/assets/KHR-272.jpg" alt="Dewan Villa Kemboja - Pakej perkahwinan premium Batu Pahat" width="800"
+              height="533" loading="lazy">
+          </article>
 
-        <article>
-          <h3>Pakej Glasshouse Kluang Container Hotel</h3>
-          <p>Konsep unik dan moden dengan dewan kaca eksklusif. Pilihan popular untuk pengantin yang mahukan sesuatu
-            yang berbeza dan istimewa.</p>
-        </article>
-      </section>
+          <article>
+            <h3>Pakej Dewan Laman Puteri</h3>
+            <p>Dewan yang selesa dan strategik di Batu Pahat, sesuai untuk majlis perkahwinan sederhana. Pakej termasuk
+              katering, pelamin dan perkhidmatan profesional.</p>
+          </article>
 
-      <section>
-        <h2>Dewan Perkahwinan di Batu Pahat & Johor</h2>
-        <p>Kami bekerjasama dengan dewan-dewan terbaik di sekitar Batu Pahat dan Johor. Setiap dewan dipilih berdasarkan
-          kualiti, lokasi strategik dan kemudahan untuk tetamu anda.</p>
-        <a href="/hall" title="Lihat semua dewan perkahwinan">Lihat Semua Dewan →</a>
-      </section>
+          <article>
+            <h3>Pakej Dewan Barokah Sri Village</h3>
+            <p>Suasana kampung yang indah dengan kemudahan moden. Sesuai untuk majlis yang intim dan bermakna.</p>
+          </article>
 
-      <section>
-        <h2>Perkhidmatan Kami</h2>
-        <ul>
-          <li><strong>Katering Premium</strong> – Nasi beriani, bukhari, lauk pengantin pilihan termasuk siakap, udang,
-            ayam dan sayur</li>
-          <li><strong>Pelamin & Dekorasi</strong> – Pelamin dewan standard hingga custom, fresh flower dan dekorasi meja
-            VIP</li>
-          <li><strong>Busana Pengantin</strong> – Baju nikah dan sanding untuk lelaki dan perempuan, termasuk aksesori
-            lengkap</li>
-          <li><strong>Makeup Profesional</strong> – Makeup nikah dan sanding oleh makeup artist berpengalaman</li>
-          <li><strong>Fotografi & Videografi</strong> – Jurugambar profesional untuk merakam setiap detik berharga</li>
-          <li><strong>Doorgift & Canopy</strong> – Pelbagai pilihan doorgift dan khemah untuk tetamu luar</li>
-        </ul>
-      </section>
+          <article>
+            <h3>Pakej Glasshouse Kluang Container Hotel</h3>
+            <p>Konsep unik dan moden dengan dewan kaca eksklusif. Pilihan popular untuk pengantin yang mahukan sesuatu
+              yang berbeza dan istimewa.</p>
+          </article>
+        </section>
 
-      <section>
-        <h2>Kenapa Pilih The Tulip Weddings?</h2>
-        <p>Dengan pengalaman bertahun-tahun dalam industri perkahwinan di Batu Pahat, kami telah menguruskan ratusan
-          majlis perkahwinan dengan jayanya. Pendekatan kami yang mesra, profesional dan teliti memastikan setiap
-          pasangan mendapat pengalaman terbaik pada hari istimewa mereka.</p>
-        <ul>
-          <li><strong>Pengalaman Luas</strong> – Ratusan majlis berjaya diuruskan</li>
-          <li><strong>Harga Berpatutan</strong> – Pakej fleksibel mengikut bajet anda</li>
-          <li><strong>Khidmat Profesional</strong> – Pasukan berpengalaman dan berdedikasi</li>
-          <li><strong>Lokasi Strategik</strong> – Dewan mudah diakses dari seluruh Johor</li>
-        </ul>
-      </section>
+        <section>
+          <h2>Dewan Perkahwinan di Batu Pahat & Johor</h2>
+          <p>Kami bekerjasama dengan dewan-dewan terbaik di sekitar Batu Pahat dan Johor. Setiap dewan dipilih
+            berdasarkan
+            kualiti, lokasi strategik dan kemudahan untuk tetamu anda.</p>
+          <a href="/hall" title="Lihat semua dewan perkahwinan">Lihat Semua Dewan →</a>
+        </section>
 
-      <section>
-        <h2>Testimoni Pelanggan</h2>
-        <blockquote>
-          <p>"Terima kasih The Tulip Weddings! Majlis kami berjalan lancar dan cantik. Semua tetamu puji pelamin dan
-            makanan. Memang berbaloi!"</p>
-        </blockquote>
-        <blockquote>
-          <p>"Pakej lengkap dan harga berpatutan. Tak perlu pening fikir apa-apa, semua dah settle. Highly recommended
-            untuk bakal pengantin di Batu Pahat!"</p>
-        </blockquote>
-      </section>
+        <section>
+          <h2>Perkhidmatan Kami</h2>
+          <ul>
+            <li><strong>Katering Premium</strong> – Nasi beriani, bukhari, lauk pengantin pilihan termasuk siakap,
+              udang,
+              ayam dan sayur</li>
+            <li><strong>Pelamin & Dekorasi</strong> – Pelamin dewan standard hingga custom, fresh flower dan dekorasi
+              meja
+              VIP</li>
+            <li><strong>Busana Pengantin</strong> – Baju nikah dan sanding untuk lelaki dan perempuan, termasuk aksesori
+              lengkap</li>
+            <li><strong>Makeup Profesional</strong> – Makeup nikah dan sanding oleh makeup artist berpengalaman</li>
+            <li><strong>Fotografi & Videografi</strong> – Jurugambar profesional untuk merakam setiap detik berharga
+            </li>
+            <li><strong>Doorgift & Canopy</strong> – Pelbagai pilihan doorgift dan khemah untuk tetamu luar</li>
+          </ul>
+        </section>
 
-      <section>
-        <h2>Hubungi The Tulip Weddings</h2>
-        <p>Bersedia untuk merancang majlis impian anda? Hubungi kami untuk konsultasi percuma dan sebut harga.</p>
-        <address>
-          <p><strong>Alamat:</strong> Batu Pahat, Johor, Malaysia</p>
-          <p><strong>Telefon:</strong> <a href="tel:+60127707912">+6012-770 7912</a></p>
-          <p><strong>Email:</strong> <a href="mailto:thetulipweddings@gmail.com">thetulipweddings@gmail.com</a></p>
-          <p><strong>WhatsApp:</strong> <a href="https://wa.me/60127707912" title="WhatsApp The Tulip Weddings">Terus
-              WhatsApp Kami</a></p>
-        </address>
-        <p>Ikuti kami di media sosial:</p>
-        <ul>
-          <li><a href="https://www.instagram.com/dtulip_wedding/" title="Instagram The Tulip Weddings"
-              rel="noopener noreferrer">Instagram @dtulip_wedding</a></li>
-          <li><a href="https://www.tiktok.com/@dtulip_wedding" title="TikTok The Tulip Weddings"
-              rel="noopener noreferrer">TikTok @dtulip_wedding</a></li>
-          <li><a href="https://www.facebook.com/p/Dtulip-Bridal-Events-100042830275870/"
-              title="Facebook D'Tulip Bridal & Events" rel="noopener noreferrer">Facebook D'Tulip Bridal & Events</a>
-          </li>
-        </ul>
-      </section>
-    </main>
+        <section>
+          <h2>Kenapa Pilih The Tulip Weddings?</h2>
+          <p>Dengan pengalaman bertahun-tahun dalam industri perkahwinan di Batu Pahat, kami telah menguruskan ratusan
+            majlis perkahwinan dengan jayanya. Pendekatan kami yang mesra, profesional dan teliti memastikan setiap
+            pasangan mendapat pengalaman terbaik pada hari istimewa mereka.</p>
+          <ul>
+            <li><strong>Pengalaman Luas</strong> – Ratusan majlis berjaya diuruskan</li>
+            <li><strong>Harga Berpatutan</strong> – Pakej fleksibel mengikut bajet anda</li>
+            <li><strong>Khidmat Profesional</strong> – Pasukan berpengalaman dan berdedikasi</li>
+            <li><strong>Lokasi Strategik</strong> – Dewan mudah diakses dari seluruh Johor</li>
+          </ul>
+        </section>
 
-    <footer>
-      <p>&copy; 2026 The Tulip Weddings. Hak cipta terpelihara. Perancang perkahwinan premium di Batu Pahat, Johor,
-        Malaysia.</p>
-      <nav aria-label="Footer navigation">
-        <a href="/">Utama</a> |
-        <a href="/about">Tentang Kami</a> |
-        <a href="/packages">Pakej Perkahwinan</a> |
-        <a href="/hall">Dewan</a> |
-        <a href="/contact">Hubungi Kami</a>
-      </nav>
-    </footer>
+        <section>
+          <h2>Testimoni Pelanggan</h2>
+          <blockquote>
+            <p>"Terima kasih The Tulip Weddings! Majlis kami berjalan lancar dan cantik. Semua tetamu puji pelamin dan
+              makanan. Memang berbaloi!"</p>
+          </blockquote>
+          <blockquote>
+            <p>"Pakej lengkap dan harga berpatutan. Tak perlu pening fikir apa-apa, semua dah settle. Highly recommended
+              untuk bakal pengantin di Batu Pahat!"</p>
+          </blockquote>
+        </section>
+
+        <section>
+          <h2>Hubungi The Tulip Weddings</h2>
+          <p>Bersedia untuk merancang majlis impian anda? Hubungi kami untuk konsultasi percuma dan sebut harga.</p>
+          <address>
+            <p><strong>Alamat:</strong> Batu Pahat, Johor, Malaysia</p>
+            <p><strong>Telefon:</strong> <a href="tel:+60127707912">+6012-770 7912</a></p>
+            <p><strong>Email:</strong> <a href="mailto:thetulipweddings@gmail.com">thetulipweddings@gmail.com</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/60127707912" title="WhatsApp The Tulip Weddings">Terus
+                WhatsApp Kami</a></p>
+          </address>
+          <p>Ikuti kami di media sosial:</p>
+          <ul>
+            <li><a href="https://www.instagram.com/dtulip_wedding/" title="Instagram The Tulip Weddings"
+                rel="noopener noreferrer">Instagram @dtulip_wedding</a></li>
+            <li><a href="https://www.tiktok.com/@dtulip_wedding" title="TikTok The Tulip Weddings"
+                rel="noopener noreferrer">TikTok @dtulip_wedding</a></li>
+            <li><a href="https://www.facebook.com/p/Dtulip-Bridal-Events-100042830275870/"
+                title="Facebook D'Tulip Bridal & Events" rel="noopener noreferrer">Facebook D'Tulip Bridal & Events</a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 The Tulip Weddings. Hak cipta terpelihara. Perancang perkahwinan premium di Batu Pahat, Johor,
+          Malaysia.</p>
+        <nav aria-label="Footer navigation">
+          <a href="/">Utama</a> |
+          <a href="/about">Tentang Kami</a> |
+          <a href="/packages">Pakej Perkahwinan</a> |
+          <a href="/hall">Dewan</a> |
+          <a href="/contact">Hubungi Kami</a>
+        </nav>
+      </footer>
+    </div><!-- end sr-only wrapper -->
   </div>
 
   <noscript>
-    <p>Sila aktifkan JavaScript untuk melihat laman web The Tulip Weddings sepenuhnya. Kami adalah perancang perkahwinan
+    <p>Sila aktifkan JavaScript untuk melihat laman web The Tulip Weddings sepenuhnya. Kami adalah perancang
+      perkahwinan
       premium di Batu Pahat, Johor, menawarkan pakej lengkap termasuk dewan, katering, pelamin dan busana pengantin.
       Hubungi kami di <a href="https://wa.me/60127707912">WhatsApp +6012-770 7912</a>.</p>
   </noscript>
