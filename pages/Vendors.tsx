@@ -15,7 +15,7 @@ const Vendors: React.FC = () => {
             alt="Vendors Header Background"
             className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/35"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in-up">

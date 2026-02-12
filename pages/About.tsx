@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { WHATSAPP_NUMBER } from '../constants';
 
 const About: React.FC = () => {
-  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20The%20Tulip%20Weddings,%20saya%20berminat%20nak%20tahu%20lebih%20lanjut%20tentang%20servis%20anda.`;
+  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Assalamualaikum, saya nak set appointment untuk konsultasi. Bila masa yang sesuai?`;
 
   const [currentImage, setCurrentImage] = useState(0);
   const showcaseImages = [
@@ -28,11 +28,11 @@ const About: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/KHR-30.jpg"
+            src="/assets/MSY_3223.jpg"
             alt="About Header Background"
             className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/35"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10 text-center decoration-clone animate-fade-in-up">
@@ -45,7 +45,7 @@ const About: React.FC = () => {
               B & J SOUTHERN SDN BHD (1557712-P)
             </span>
             <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 text-white uppercase leading-tight drop-shadow-md">
-              Kenali The Tulip <br /> Wedding & Events
+              Kenali Kami
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed">
               “Designing Your Perfect Wedding”
@@ -180,7 +180,7 @@ const About: React.FC = () => {
                   Jom Bincang Tentang <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white italic">Majlis Anda?</span>
                 </h2>
                 <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto md:mx-0 font-light">
-                  Datang ke butik kami untuk sesi konsultasi percuma. Lihat koleksi baju, rasa fabrik, dan bincang pakej depan-depan.
+                  Jom set appointment untuk sesi konsultasi santai. Kita bincang idea, tengok koleksi, dan rancang majlis impian anda bersama-sama.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                   <a href={waLink} target="_blank" rel="noreferrer">

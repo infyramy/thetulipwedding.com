@@ -48,7 +48,7 @@ const PACKAGES_LIST = [
     price: 'RM 22,000',
     pax: '1000 Pax',
     featured: true,
-    image: 'https://placehold.co/800x600/fce7f3/db2777?text=Villa+Kemboja',
+    image: '/assets/hall/villa kemboja/villa kemboja1.jpeg',
     desc: 'Pakej "All-in" paling popular. Termasuk penginapan homestay keluarga (3H2M) di Villa Kemboja.',
     includes: [
       'Sewa Dewan & Homestay (5 Bilik)',
@@ -66,7 +66,7 @@ const PACKAGES_LIST = [
     title: 'Pakej Grand Hall',
     price: 'RM 21,500',
     pax: '1000 Pax',
-    image: 'https://placehold.co/800x600/f3e8ff/9333ea?text=Grand+Hall',
+    image: '/assets/hall/lamanputeri/hall laman puteri1.jpeg',
     desc: 'Untuk majlis resepsi formal dan selesa di dewan berhawa dingin sepenuhnya.',
     includes: [
       'Sewa Dewan (Aircond)',
@@ -84,7 +84,7 @@ const PACKAGES_LIST = [
     title: 'Pakej Dewan Intimate',
     price: 'RM 17,500',
     pax: '500 Pax',
-    image: 'https://placehold.co/800x600/e0e7ff/4f46e5?text=Intimate+Hall',
+    image: '/assets/hall/kluang container/kluang container hotel1.jpeg',
     desc: 'Sesuai untuk majlis sederhana (500 pax) dengan bajet yang berpatutan namun tetap nampak mewah.',
     includes: [
       'Katering 500 Pax',
@@ -105,7 +105,7 @@ const PACKAGES_LIST = [
     price: 'RM 20,500',
     pax: '1000 Pax',
     featured: true,
-    image: 'https://placehold.co/800x600/fff1f2/e11d48?text=Rumah+Meriah',
+    image: '/assets/KHR-272.jpg',
     desc: 'Pakej lengkap untuk majlis besar di laman rumah. Kami sediakan segalanya dari A-Z.',
     includes: [
       '6 Set Khemah Arabian (Scallop)',
@@ -123,7 +123,7 @@ const PACKAGES_LIST = [
     title: 'Pakej Rumah Standard',
     price: 'RM 18,500',
     pax: '800 Pax',
-    image: 'https://placehold.co/800x600/fff7ed/ea580c?text=Rumah+Standard',
+    image: '/assets/KHR-421.jpg',
     desc: 'Pilihan ideal untuk majlis sederhana meriah dengan kelengkapan yang cukup selesa.',
     includes: [
       '5 Set Khemah Arabian',
@@ -141,7 +141,7 @@ const PACKAGES_LIST = [
     title: 'Pakej Ekonomi',
     price: 'RM 15,200',
     pax: '500 Pax',
-    image: 'https://placehold.co/800x600/ecfccb/65a30d?text=Pakej+Ekonomi',
+    image: '/assets/MSY_9586.jpg',
     desc: 'Bajet rendah? Tiada masalah. Pakej ini lengkap keperluan asas majlis.',
     includes: [
       '4 Set Khemah Arabian',
@@ -162,7 +162,7 @@ const PACKAGES_LIST = [
     price: 'RM 2,500',
     pax: 'Combo',
     featured: true,
-    image: 'https://placehold.co/800x600/f0f9ff/0284c7?text=Bridal+Combo',
+    image: '/assets/IMG_2343.jpg',
     desc: 'Gabungan servis paling penting. Anda cari tempat & makanan, kami uruskan penampilan & kenangan.',
     includes: [
       'Sepasang Baju Sanding (L&P)',
@@ -179,7 +179,7 @@ const PACKAGES_LIST = [
     title: 'Bridal Basic',
     price: 'RM 1,500',
     pax: 'Starter',
-    image: 'https://placehold.co/800x600/f5f5f5/525252?text=Bridal+Basic',
+    image: '/assets/FHP_0255.jpg',
     desc: 'Untuk pasangan yang mahukan busana & solekan sahaja tanpa pening kepala.',
     includes: [
       'Sepasang Baju Sanding (L&P)',
@@ -195,7 +195,7 @@ const PACKAGES_LIST = [
     title: 'Pelamin Tunang / Nikah',
     price: 'RM 800+',
     pax: 'Decor',
-    image: 'https://placehold.co/800x600/fffbeb/d97706?text=Pelamin+Nikah',
+    image: '/assets/K7300415.jpg',
     desc: 'Hiasan pelamin mini untuk majlis pertunangan atau akad nikah di rumah.',
     includes: [
       'Pelamin Mini (8-10ft)',
@@ -214,7 +214,7 @@ const Packages: React.FC = () => {
   const activeCategory = CATEGORIES.find(c => c.id === activeTab);
 
   const handleWhatsApp = (pkgName: string) => {
-    const text = `Hi The Tulip Weddings, saya berminat nak tahu lebih lanjut pasal ${pkgName}. Boleh check tarikh?`;
+    const text = `Assalamualaikum, saya nak tanya pasal ${pkgName} ni. Boleh explain lebih detail tak?`;
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
   };
 
@@ -226,11 +226,11 @@ const Packages: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/IMG_9575.jpg"
+            src="/assets/MSY_9176.jpg"
             alt="Packages Header Background"
             className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/35"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in-up">
@@ -284,10 +284,10 @@ const Packages: React.FC = () => {
 
           {/* Footer Note - Moved Here */}
           <div className="text-center mb-12 max-w-2xl mx-auto">
-            <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-xl shadow-sm flex items-start gap-3 text-left md:items-center">
-              <Star className="w-5 h-5 text-yellow-500 fill-yellow-500 shrink-0 mt-0.5 md:mt-0" />
-              <p className="text-gray-700 text-xs leading-relaxed">
-                <strong>PENTING:</strong> Harga yang dipaparkan adalah <strong>harga permulaan</strong> (starting price). Pakej boleh disesuaikan dengan penambahan servis (add-ons). Hubungi kami untuk perincian dan sebut harga rasmi.
+            <div className="bg-pink-50/50 border border-pink-100 p-4 rounded-xl shadow-sm flex items-start gap-3 text-left md:items-center">
+              <Sparkles className="w-5 h-5 text-pink-400 shrink-0 mt-0.5 md:mt-0" />
+              <p className="text-gray-600 text-xs leading-relaxed">
+                <strong className="text-pink-600">Nota:</strong> Harga tertera adalah harga permulaan (starting price). Pakej boleh diubah suai mengikut bajet & impian anda. Hubungi kami untuk sebut harga rasmi.
               </p>
             </div>
           </div>
@@ -316,7 +316,7 @@ const Packages: React.FC = () => {
 
                   {/* Image Area */}
                   <div className="h-56 overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60 z-10"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60 z-10"></div>
                     <img
                       src={pkg.image}
                       alt={pkg.title}

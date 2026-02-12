@@ -5,14 +5,14 @@ import { ArrowDown, MessageCircle, Award } from 'lucide-react';
 import { WHATSAPP_NUMBER } from '../constants';
 
 const HERO_IMAGES = [
-  "/assets/KHR-30.jpg",
   "/assets/K7300415.jpg",
-  "/assets/AIMN9527.jpg",
-  "/assets/MSY_9586.jpg"
+  "/assets/KHR-24.jpg",
+  "/assets/KHR-421.jpg",
+  "/assets/FHP_0255.jpg"
 ];
 
 const Hero: React.FC = () => {
-  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20The%20Tulip%20Weddings,%20saya%20berminat%20nak%20tahu%20pakej%20terkini%202026!`;
+  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Assalamualaikum, saya nak check tarikh kosong untuk majlis tahun 2026. Boleh?`;
 
   // Initialize with a randomized order
   const [shuffledImages] = useState(() => [...HERO_IMAGES].sort(() => Math.random() - 0.5));
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
       {/* Cinematic Background Slideshow */}
       <div className="absolute inset-0 z-0">
         {/* Dark overlay for perfect text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/80 z-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60 z-20"></div>
 
         {shuffledImages.map((src, index) => (
           <div

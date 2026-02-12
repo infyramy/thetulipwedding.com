@@ -22,11 +22,10 @@ const GalleryGrid: React.FC<GalleryGridProps> = ({ items }) => {
           <button
             key={cat}
             onClick={() => setFilter(cat)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-              filter === cat 
-                ? 'bg-roseGold text-white shadow-md' 
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${filter === cat
+                ? 'bg-roseGold text-white shadow-md'
                 : 'bg-white text-gray-600 hover:bg-gray-100'
-            }`}
+              }`}
           >
             {cat}
           </button>
@@ -36,17 +35,17 @@ const GalleryGrid: React.FC<GalleryGridProps> = ({ items }) => {
       {/* Grid */}
       <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
         {filteredItems.map((item) => (
-          <div 
-            key={item.id} 
+          <div
+            key={item.id}
             className="break-inside-avoid group relative rounded-xl overflow-hidden cursor-pointer"
             onClick={() => setSelectedImage(item)}
           >
-            <img 
-              src={item.src} 
-              alt={item.caption} 
+            <img
+              src={item.src}
+              alt={item.caption}
               className="w-full h-auto transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <p className="text-white font-serif text-lg">{item.caption}</p>
             </div>
           </div>
@@ -60,10 +59,10 @@ const GalleryGrid: React.FC<GalleryGridProps> = ({ items }) => {
             <X size={32} />
           </button>
           <div className="max-w-4xl max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
-            <img 
-              src={selectedImage.src} 
-              alt={selectedImage.caption} 
-              className="w-full h-full object-contain rounded-sm" 
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.caption}
+              className="w-full h-full object-contain rounded-sm"
             />
             <div className="mt-4 text-center text-white font-serif text-xl">
               {selectedImage.caption}

@@ -23,9 +23,9 @@ export const NAV_LINKS = [
 // Reliable Placeholder Images
 const IMG_HERO = "https://placehold.co/1920x1080/1a1a1a/ffffff?text=The+Tulip+Weddings";
 const IMG_VILLA = "https://placehold.co/1000x800/2d2d2d/ffffff?text=Villa+Kemboja+Hall";
-const IMG_DEWAN = "https://placehold.co/1000x800/f3f4f6/be185d?text=Grand+Dewan+Setup";
-const IMG_KANOPI = "https://placehold.co/1000x800/ecfccb/3f6212?text=Outdoor+Canopy+Setup";
-const IMG_BRIDAL = "https://placehold.co/1000x800/fae8ff/86198f?text=Bridal+Collection";
+const IMG_DEWAN = "/assets/FHP_0111.jpg";
+const IMG_KANOPI = "/assets/KHR-272.jpg";
+const IMG_BRIDAL = "/assets/IMG_2343.jpg";
 const IMG_CATERING = "https://placehold.co/1000x800/ffedd5/9a3412?text=Premium+Catering";
 const IMG_PELAMIN = "https://placehold.co/800x600/fce7f3/9d174d?text=Pelamin+Decor";
 

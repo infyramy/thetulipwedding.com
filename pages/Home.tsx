@@ -9,7 +9,7 @@ import { TESTIMONIALS, WHATSAPP_NUMBER } from '../constants';
 import { motion } from 'framer-motion';
 
 const Home: React.FC = () => {
-  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20The%20Tulip%20Weddings,%20saya%20nak%20tanya%20pakej%20ikut%20bajet.`;
+  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Assalamualaikum, saya nak tanya pasal pakej perkahwinan. Boleh tolong terangkan sikit?`;
 
   const services = [
     { icon: Utensils, label: "Katering", sub: "Menu Beriani & Lauk Pengantin" },
@@ -34,7 +34,7 @@ const Home: React.FC = () => {
       link: "/packages",
       linkText: "Lihat Detail",
       locations: ["Rumah", "Kanopi", "Dewan"],
-      image: "https://placehold.co/600x400/fae8ff/86198f?text=Bridal+Collection"
+      image: "/assets/IMG_2343.jpg"
     },
     {
       title: "Bridal + Katering",
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
       link: "/packages",
       linkText: "Lihat Pakej",
       locations: ["Rumah", "Kanopi"],
-      image: "https://placehold.co/600x400/ecfccb/3f6212?text=Katering+Kanopi"
+      image: "/assets/KHR-272.jpg"
     },
     {
       title: "Bridal + Katering + Dewan",
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
       link: "/hall",
       linkText: "Lihat Dewan",
       locations: ["Dewan"],
-      image: "https://placehold.co/600x400/f3f4f6/be185d?text=Grand+Dewan"
+      image: "/assets/FHP_0111.jpg"
     }
   ];
 
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-all duration-700 group">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-60 z-10"></div>
                 <img
                   src="/assets/MSY_9586.jpg"
                   alt="Wedding Decoration"
@@ -202,7 +202,7 @@ const Home: React.FC = () => {
                 {/* Footer / CTA */}
                 <div className={`p-8 pt-0 mt-auto`}>
                   <div className="flex flex-col gap-3">
-                    <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20The%20Tulip%20Weddings,%20saya%20berminat%20dengan%20${pkg.title}`} target="_blank" rel="noreferrer">
+                    <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Assalamualaikum, saya berminat dengan ${pkg.title}. Boleh bagi details lanjut?`} target="_blank" rel="noreferrer">
                       <Button
                         fullWidth
                         size="sm"
@@ -279,7 +279,7 @@ const Home: React.FC = () => {
           >
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
               <img
-                src="/assets/IMG_9603.jpg"
+                src="/assets/K7309359.jpg"
                 alt="Dewan Wedding"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
               />
@@ -333,8 +333,11 @@ const Home: React.FC = () => {
       </Section>
 
       {/* Testimonials */}
-      <Section padding="lg" className="relative bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/assets/MSY_9182.jpg')" }}>
-        <div className="absolute inset-0 bg-black/60 pointer-events-none"></div>
+      <Section padding="lg" bgColor="transparent" className="relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/assets/FHP_0022.jpg" alt="Testimonial Background" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/20"></div>
+        </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-10">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-white drop-shadow-lg">Testimoni</h2>

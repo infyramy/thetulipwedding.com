@@ -11,6 +11,9 @@ import Vendors from './pages/Vendors';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 
+import { AnimatePresence } from 'framer-motion';
+import PageTransition from './components/PageTransition';
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -23,9 +26,29 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow relative">{children}</main>
       <Footer />
     </div>
+  );
+};
+
+const AnimatedRoutes = () => {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      {/* @ts-ignore */}
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+        <Route path="/about" element={<PageTransition><About /></PageTransition>} />
+        <Route path="/packages" element={<PageTransition><Packages /></PageTransition>} />
+        <Route path="/bridal" element={<PageTransition><Bridal /></PageTransition>} />
+        <Route path="/hall" element={<PageTransition><Hall /></PageTransition>} />
+        <Route path="/vendors" element={<PageTransition><Vendors /></PageTransition>} />
+        <Route path="/gallery" element={<PageTransition><Gallery /></PageTransition>} />
+        <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+      </Routes>
+    </AnimatePresence>
   );
 };
 
@@ -34,16 +57,7 @@ const App: React.FC = () => {
     <Router>
       <ScrollToTop />
       <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/packages" element={<Packages />} />
-          <Route path="/bridal" element={<Bridal />} />
-          <Route path="/hall" element={<Hall />} />
-          <Route path="/vendors" element={<Vendors />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <AnimatedRoutes />
       </Layout>
     </Router>
   );

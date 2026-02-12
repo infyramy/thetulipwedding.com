@@ -11,7 +11,7 @@ interface HallCardProps {
 
 const HallCard: React.FC<HallCardProps> = ({ hall }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Dtulips,%20saya%20berminat%20dengan%20${encodeURIComponent(hall.name)}.%20Boleh%20saya%20tahu%20pakej%20dan%20kekosongan?`;
+  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Assalamualaikum, saya berminat dengan dewan ${encodeURIComponent(hall.name)}. Boleh check tarikh kosong dan harga pakej?`;
 
   const nextImage = (e: React.MouseEvent) => {
     e.stopPropagation();

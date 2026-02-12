@@ -5,14 +5,14 @@ import { APP_NAME, CONTACT_EMAIL, NAV_LINKS, WHATSAPP_NUMBER, SOCIAL_LINKS } fro
 
 const Footer: React.FC = () => {
   const [form, setForm] = useState({ name: '', date: '', type: 'Pakej Lengkap' });
-  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20The%20Tulip%20Weddings,%20saya%20berminat%20dengan%20servis%20anda.`;
+  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Assalamualaikum, saya nak tanya tentang servis The Tulip Weddings`;
 
   const handleExpressSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name) return;
 
     const text = `*Enquiry Dari Footer Website* 👇%0A%0A👤 Nama: ${form.name}%0A📅 Tarikh: ${form.date || 'Belum ada'}%0A📦 Minat: ${form.type}%0A%0ABoleh check kekosongan?`;
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=Assalamualaikum, saya nak check tarikh kosong untuk majlis. ${text}`, '_blank');
   };
 
   return (

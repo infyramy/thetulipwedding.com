@@ -4,7 +4,7 @@ import Button from '../components/Button';
 import { GALLERY_ITEMS, WHATSAPP_NUMBER } from '../constants';
 
 const Bridal: React.FC = () => {
-  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Dtulips,%20saya%20nak%20fitting%20baju.`;
+  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Assalamualaikum, saya nak buat appointment untuk fitting baju pengantin. Bila available?`;
 
   return (
     <>
@@ -17,7 +17,7 @@ const Bridal: React.FC = () => {
             alt="Bridal Header Background"
             className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/35"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in-up">
