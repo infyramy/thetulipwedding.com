@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "scrape": "node scripts/scrape-feed.mjs",
+    "scrape:watch": "node -e \"const {execSync}=require('child_process'); const run=()=>{try{execSync('node scripts/scrape-feed.mjs',{stdio:'inherit'})}catch(e){console.error(e.message)}}; run(); setInterval(run, 24*60*60*1000)\""
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "puppeteer": "^24.37.5",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }
