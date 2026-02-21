@@ -53,11 +53,11 @@ const About: React.FC = () => {
             <span className="text-pink-400 font-bold tracking-[0.2em] uppercase text-xs md:text-sm mb-3 block">
               B & J SOUTHERN SDN BHD (1557712-P)
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 text-white uppercase leading-tight drop-shadow-md">
-              KENALI KAMI
+            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-md">
+              Kenali Kami
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed">
-              “Merealisasikan Majlis Idaman Anda”
+              Menyempurnakan Perjalanan Hari Bahagia Anda
             </p>
           </motion.div>
         </div>
@@ -68,13 +68,13 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4 flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/2 relative">
             {/* Main Image Slideshow */}
-            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-all duration-500 border-4 border-white h-[500px] group">
+            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-all duration-500 border-4 border-white h-[400px] md:h-[500px] bg-white group">
               {showcaseImages.map((img, idx) => (
                 <img
                   key={idx}
                   src={img}
                   alt="Suasana Butik The Tulip"
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${idx === currentImage ? 'opacity-100' : 'opacity-0'}`}
+                  className={`absolute inset-0 w-full h-full object-contain p-2 transition-opacity duration-1000 ${idx === currentImage ? 'opacity-100' : 'opacity-0'}`}
                 />
               ))}
             </div>
