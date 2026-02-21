@@ -227,7 +227,7 @@ const Packages: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/MSY_9176.jpg"
+            src="/assets/FHP_0111.jpg"
             alt="Packages Header Background"
             className="w-full h-full object-cover opacity-60"
           />
