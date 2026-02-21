@@ -43,13 +43,36 @@ const Contact: React.FC = () => {
                   <div className="w-12 h-12 bg-primaryDark rounded-full flex items-center justify-center text-white shadow-lg shrink-0 group-hover:scale-110 transition-transform">
                     <MapPin size={20} />
                   </div>
-                  <div>
-                    <p className="font-bold text-charcoal text-lg">Lokasi Operasi</p>
-                    <p className="text-gray-500 text-base leading-relaxed">
+                  <div className="flex-1">
+                    <a
+                      href="https://share.google/bI6q4Xwu6g96qfxzy"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-bold text-charcoal text-lg hover:text-pink-600 transition-colors inline-block mb-2"
+                    >
+                      Lokasi Operasi
+                    </a>
+                    <a
+                      href="https://share.google/bI6q4Xwu6g96qfxzy"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block mb-3 overflow-hidden rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+                    >
+                      <img
+                        src="/assets/dtulips.jpg"
+                        alt="The Tulip Weddings Gallery"
+                        className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
+                      />
+                    </a>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-2">
                       Pusat Perniagaan Parit Raja,<br />
-                      86400 Batu Pahat, Johor<br />
-                      <span className="text-xs italic text-pink-500 mt-1 block">(Covering All Johor)</span>
+                      Mukim 11, Jalan Parit Botak,<br />
+                      86400 Batu Pahat, Johor
                     </p>
+                    <div className="inline-flex items-center gap-1.5 bg-pink-50 text-pink-700 px-3 py-1 rounded-full text-[10px] font-bold tracking-wide uppercase">
+                      <MapPin size={10} />
+                      Meliputi seluruh Johor (kecuali Mersing)
+                    </div>
                   </div>
                 </li>
                 <li className="flex items-center gap-4 group">
