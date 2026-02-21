@@ -5,10 +5,10 @@ import { ArrowDown, MessageCircle, Award } from 'lucide-react';
 import { WHATSAPP_NUMBER } from '../constants';
 
 const HERO_IMAGES = [
-  "/assets/K7300415.jpg",
-  "/assets/KHR-24.jpg",
-  "/assets/KHR-421.jpg",
-  "/assets/FHP_0255.jpg"
+  "/assets/images/bridal/decoration-pelamin-01.jpg",
+  "/assets/images/hero/hero-hall-bg.jpg",
+  "/assets/images/hero/kanopi-setup-04.jpg",
+  "/assets/images/hero/hero-wedding-04.jpg"
 ];
 
 const Hero: React.FC = () => {

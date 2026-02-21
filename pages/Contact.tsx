@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/FHP_0297.jpg"
+            src="/assets/images/hero/hero-contact-bg.jpg"
             alt="Contact Header Background"
             className="w-full h-full object-cover opacity-60"
           />

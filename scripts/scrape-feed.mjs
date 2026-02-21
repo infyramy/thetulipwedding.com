@@ -21,7 +21,7 @@ try { puppeteer = require('puppeteer'); } catch (_) { }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = path.join(__dirname, '../public/social-feed.json');
-const THUMB_DIR = path.join(__dirname, '../public/social-thumbnails');
+const THUMB_DIR = path.join(__dirname, '../public/assets/images/social');
 
 const IG_USERNAME = 'dtulip_wedding';
 const TIKTOK_USERNAME = 'dtulip_wedding';
@@ -53,13 +53,13 @@ function fetchUrl(url, headers = {}, binary = false) {
 
 /**
  * Download an image from a remote URL and save it locally.
- * Returns the local public path (e.g. /social-thumbnails/ig_abc123.jpg).
+ * Returns the local public path (e.g. /assets/images/social/ig_abc123.jpg).
  */
 async function downloadThumbnail(remoteUrl, filename) {
     if (!remoteUrl) return null;
 
     const localPath = path.join(THUMB_DIR, filename);
-    const publicPath = `/social-thumbnails/${filename}`;
+    const publicPath = `/assets/images/social/${filename}`;
 
     // Skip if already downloaded during this run (unlikely but safe)
     if (fs.existsSync(localPath)) {
@@ -345,7 +345,7 @@ async function main() {
     console.log(`   Instagram: ${output.instagram.length} posts`);
     console.log(`   TikTok:    ${output.tiktok.length} posts`);
     console.log('');
-    console.log('Thumbnails saved to public/social-thumbnails/');
+    console.log('Thumbnails saved to public/assets/images/social/');
 }
 
 main().catch((err) => {

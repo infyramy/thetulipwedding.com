@@ -11,7 +11,7 @@ const Vendors: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/dtulips 2.jpg"
+            src="/assets/images/contact/boutique-exterior-02.jpg"
             alt="Vendors Header Background"
             className="w-full h-full object-cover opacity-60"
           />

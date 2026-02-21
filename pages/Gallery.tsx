@@ -11,7 +11,7 @@ const Gallery: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/MSY_9182.jpg"
+            src="/assets/images/hero/hero-wedding-10.jpg"
             alt="Gallery Header Background"
             className="w-full h-full object-cover opacity-60"
           />

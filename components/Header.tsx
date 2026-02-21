@@ -50,8 +50,8 @@ const Header: React.FC = () => {
           <NavLink to="/" className="flex items-center gap-2 z-[110] group relative">
             <img
               src={scrolled
-                ? "/assets/LOGO THE TULIP AI (1).svg" // Light Mode (Color)
-                : "/assets/LOGO THE TULIP AI (2).svg" // Dark Mode (White)
+                ? "/assets/images/logo/logo-tulip-full.svg" // Light Mode (Color)
+                : "/assets/images/logo/logo-tulip-icon.svg" // Dark Mode (White)
               }
               alt={APP_NAME}
               className="h-12 w-auto transition-all duration-300 drop-shadow-md"

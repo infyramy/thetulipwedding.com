@@ -23,9 +23,9 @@ export const NAV_LINKS = [
 // Reliable Placeholder Images
 const IMG_HERO = "https://placehold.co/1920x1080/1a1a1a/ffffff?text=The+Tulip+Weddings";
 const IMG_VILLA = "https://placehold.co/1000x800/2d2d2d/ffffff?text=Villa+Kemboja+Hall";
-const IMG_DEWAN = "/assets/FHP_0111.jpg";
-const IMG_KANOPI = "/assets/KHR-272.jpg";
-const IMG_BRIDAL = "/assets/IMG_2343.jpg";
+const IMG_DEWAN = "/assets/images/hero/hero-wedding-03.jpg";
+const IMG_KANOPI = "/assets/images/hero/kanopi-setup-02.jpg";
+const IMG_BRIDAL = "/assets/images/bridal/bridal-boutique-02.jpg";
 const IMG_CATERING = "https://placehold.co/1000x800/ffedd5/9a3412?text=Premium+Catering";
 const IMG_PELAMIN = "https://placehold.co/800x600/fce7f3/9d174d?text=Pelamin+Decor";
 
@@ -50,7 +50,7 @@ export const PACKAGES: Package[] = [
       'Photography (Nikah & Sanding Same Day)',
       'PERCUMA: Outdoor Session & Softcopy'
     ],
-    image: '/assets/hall/barokah/barokah sril village1.jpeg',
+    image: '/assets/images/hall/barokah-village/barokah-village-01.jpg',
     category: 'Full',
     featured: true,
   },
@@ -68,7 +68,7 @@ export const PACKAGES: Package[] = [
       'Photography 2 Event (Same Day)',
       'EMCEE, PA System & Kek Pengantin 2 Tingkat'
     ],
-    image: '/assets/hall/lamanputeri/hall laman puteri1.jpeg',
+    image: '/assets/images/hall/laman-puteri/laman-puteri-01.jpg',
     category: 'Full',
     featured: true,
   },
@@ -86,7 +86,7 @@ export const PACKAGES: Package[] = [
       'Photography 2 Event',
       'PA System, DJ & Kek'
     ],
-    image: '/assets/hall/kluang container/kluang container hotel1.jpeg',
+    image: '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-01.jpg',
     category: 'Full',
   },
 
@@ -193,13 +193,13 @@ export const HALLS: Hall[] = [
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Dewan Terbuka Eksklusif', 'Ruang Makan Selesa', 'Parking Tetamu', 'Bilik Pengantin'],
     images: [
-      '/assets/hall/lamanputeri/hall laman puteri1.jpeg',
-      '/assets/hall/lamanputeri/hall laman puteri2.jpeg',
-      '/assets/hall/lamanputeri/hall laman puteri3.jpeg',
-      '/assets/hall/lamanputeri/hall laman puteri4.jpeg',
-      '/assets/hall/lamanputeri/hall laman puteri5.jpeg',
-      '/assets/hall/lamanputeri/hall laman puteri6.jpeg',
-      '/assets/hall/lamanputeri/hall laman puteri7.jpeg',
+      '/assets/images/hall/laman-puteri/laman-puteri-01.jpg',
+      '/assets/images/hall/laman-puteri/laman-puteri-02.jpg',
+      '/assets/images/hall/laman-puteri/laman-puteri-03.jpg',
+      '/assets/images/hall/laman-puteri/laman-puteri-04.jpg',
+      '/assets/images/hall/laman-puteri/laman-puteri-05.jpg',
+      '/assets/images/hall/laman-puteri/laman-puteri-06.jpg',
+      '/assets/images/hall/laman-puteri/laman-puteri-07.jpg',
     ],
     coordinates: { lat: 1.8548, lng: 102.9229 },
   },
@@ -212,14 +212,14 @@ export const HALLS: Hall[] = [
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Konsep Unik & Moden', 'Bilik Pengantin', 'Lighting Ambience', 'Spot OOTD Viral'],
     images: [
-      '/assets/hall/kluang container/kluang container hotel1.jpeg',
-      '/assets/hall/kluang container/kluang container hotel2.jpeg',
-      '/assets/hall/kluang container/kluang container hotel3.jpeg',
-      '/assets/hall/kluang container/kluang container hotel4.jpeg',
-      '/assets/hall/kluang container/kluang container hotel5.jpeg',
-      '/assets/hall/kluang container/kluang container hotel6.jpeg',
-      '/assets/hall/kluang container/kluang container hotel7.jpeg',
-      '/assets/hall/kluang container/kluang container hotel8.jpeg',
+      '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-01.jpg',
+      '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-02.jpg',
+      '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-03.jpg',
+      '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-04.jpg',
+      '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-05.jpg',
+      '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-06.jpg',
+      '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-07.jpg',
+      '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-08.jpg',
     ],
     coordinates: { lat: 2.0305, lng: 103.3168 },
   },
@@ -232,18 +232,18 @@ export const HALLS: Hall[] = [
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Suasana Desa Damai', 'Dewan Luas', 'Parking Mudah', 'Surau'],
     images: [
-      '/assets/hall/barokah/barokah sril village1.jpeg',
-      '/assets/hall/barokah/barokah sril village2.jpeg',
-      '/assets/hall/barokah/barokah sril village3.jpeg',
-      '/assets/hall/barokah/barokah sril village4.jpeg',
-      '/assets/hall/barokah/barokah sril village5.jpeg',
-      '/assets/hall/barokah/barokah sril village6.jpeg',
-      '/assets/hall/barokah/barokah sril village7.jpeg',
-      '/assets/hall/barokah/barokah sril village8.jpeg',
-      '/assets/hall/barokah/barokah sril village9.jpeg',
-      '/assets/hall/barokah/barokah sril village10.jpeg',
-      '/assets/hall/barokah/barokah sril village11.jpeg',
-      '/assets/hall/barokah/barokah sril village12.jpeg',
+      '/assets/images/hall/barokah-village/barokah-village-01.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-02.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-03.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-04.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-05.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-06.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-07.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-08.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-09.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-10.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-11.jpg',
+      '/assets/images/hall/barokah-village/barokah-village-12.jpg',
     ],
     coordinates: { lat: 1.8500, lng: 102.9300 },
   },
@@ -256,16 +256,16 @@ export const HALLS: Hall[] = [
     priceRange: 'Pakej Bermula RM 22,000',
     facilities: ['Bilik Pengantin', 'Parking Luas', 'Surau', 'Bilik Persalinan'],
     images: [
-      '/assets/hall/villa kemboja/villa kemboja1.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja2.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja3.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja4.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja5.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja6.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja7.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja8.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja9.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja10.jpeg',
+      '/assets/images/hall/villa-kemboja/villa-kemboja-01.jpg',
+      '/assets/images/hall/villa-kemboja/villa-kemboja-02.jpg',
+      '/assets/images/hall/villa-kemboja/villa-kemboja-03.jpg',
+      '/assets/images/hall/villa-kemboja/villa-kemboja-04.jpg',
+      '/assets/images/hall/villa-kemboja/villa-kemboja-05.jpg',
+      '/assets/images/hall/villa-kemboja/villa-kemboja-06.jpg',
+      '/assets/images/hall/villa-kemboja/villa-kemboja-07.jpg',
+      '/assets/images/hall/villa-kemboja/villa-kemboja-08.jpg',
+      '/assets/images/hall/villa-kemboja/villa-kemboja-09.jpg',
+      '/assets/images/hall/villa-kemboja/villa-kemboja-10.jpg',
     ],
     coordinates: { lat: 1.8494, lng: 102.9288 },
   },

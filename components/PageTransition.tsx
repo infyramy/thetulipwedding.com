@@ -8,7 +8,7 @@ const PageTransition: React.FC<{ children: React.ReactNode }> = ({ children }) =
     const Logo = () => (
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <img
-                src="/assets/LOGO THE TULIP AI (1).svg"
+                src="/assets/images/logo/logo-tulip-full.svg"
                 alt="Logo"
                 className="w-48 h-auto opacity-100 drop-shadow-md"
             />

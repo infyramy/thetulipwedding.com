@@ -12,7 +12,7 @@ const Hall: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/KHR-24.jpg"
+            src="/assets/images/hero/hero-hall-bg.jpg"
             alt="Hall Header Background"
             className="w-full h-full object-cover opacity-60"
           />

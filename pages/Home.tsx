@@ -34,7 +34,7 @@ const Home: React.FC = () => {
       link: "/packages",
       linkText: "Lihat Detail",
       locations: ["Rumah", "Kanopi", "Dewan"],
-      image: "/assets/IMG_2343.jpg"
+      image: "/assets/images/bridal/bridal-boutique-02.jpg"
     },
     {
       title: "Bridal + Katering",
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
       link: "/packages",
       linkText: "Lihat Pakej",
       locations: ["Rumah", "Kanopi"],
-      image: "/assets/KHR-272.jpg"
+      image: "/assets/images/hero/kanopi-setup-02.jpg"
     },
     {
       title: "Bridal + Katering + Dewan",
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
       link: "/hall",
       linkText: "Lihat Dewan",
       locations: ["Dewan"],
-      image: "/assets/FHP_0111.jpg"
+      image: "/assets/images/hero/hero-wedding-03.jpg"
     }
   ];
 
@@ -119,7 +119,7 @@ const Home: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-all duration-700 group">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-60 z-10"></div>
                 <img
-                  src="/assets/MSY_9586.jpg"
+                  src="/assets/images/hero/hero-wedding-11.jpg"
                   alt="Wedding Decoration"
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-1000"
                 />
@@ -279,7 +279,7 @@ const Home: React.FC = () => {
           >
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
               <img
-                src="/assets/K7309359.jpg"
+                src="/assets/images/bridal/decoration-pelamin-02.jpg"
                 alt="Dewan Wedding"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
               />
@@ -335,7 +335,7 @@ const Home: React.FC = () => {
       {/* Testimonials */}
       <Section padding="lg" bgColor="transparent" className="relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/assets/FHP_0022.jpg" alt="Testimonial Background" className="w-full h-full object-cover" />
+          <img src="/assets/images/hero/hero-wedding-02.jpg" alt="Testimonial Background" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">

@@ -48,7 +48,7 @@ const PACKAGES_LIST = [
     price: 'RM 22,000',
     pax: '',
     featured: true,
-    image: '/assets/hall/barokah/barokah sril village1.jpeg',
+    image: '/assets/images/hall/barokah-village/barokah-village-01.jpg',
     desc: 'Pakej "All-in" paling popular. Termasuk penginapan homestay keluarga.',
     includes: [
       'Sewa Dewan & Homestay',
@@ -66,7 +66,7 @@ const PACKAGES_LIST = [
     title: 'Pakej Dewan Intimate',
     price: 'RM 14,600',
     pax: '',
-    image: '/assets/hall/lamanputeri/hall laman puteri1.jpeg',
+    image: '/assets/images/hall/laman-puteri/laman-puteri-01.jpg',
     desc: 'Untuk majlis resepsi formal dan selesa di dewan berhawa dingin sepenuhnya.',
     includes: [
       'Sewa Dewan (Aircond)',
@@ -85,7 +85,7 @@ const PACKAGES_LIST = [
     title: 'GRAND GLASS HALL',
     price: 'RM 21,500',
     pax: '',
-    image: '/assets/hall/kluang container/kluang container hotel1.jpeg',
+    image: '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-01.jpg',
     desc: 'Sesuai untuk majlis sederhana dengan bajet yang berpatutan namun tetap nampak mewah.',
     includes: [
       'Katering Lengkap',
@@ -106,7 +106,7 @@ const PACKAGES_LIST = [
     price: 'RM 20,500',
     pax: '1000 Pax',
     featured: true,
-    image: '/assets/KHR-272.jpg',
+    image: '/assets/images/hero/kanopi-setup-02.jpg',
     desc: 'Pakej lengkap untuk majlis besar di laman rumah. Kami sediakan segalanya dari A-Z.',
     includes: [
       '6 Set Khemah Arabian (Scallop)',
@@ -124,7 +124,7 @@ const PACKAGES_LIST = [
     title: 'Pakej Rumah Standard',
     price: 'RM 18,500',
     pax: '800 Pax',
-    image: '/assets/KHR-421.jpg',
+    image: '/assets/images/hero/kanopi-setup-04.jpg',
     desc: 'Pilihan ideal untuk majlis sederhana meriah dengan kelengkapan yang cukup selesa.',
     includes: [
       '5 Set Khemah Arabian',
@@ -142,7 +142,7 @@ const PACKAGES_LIST = [
     title: 'Pakej Ekonomi',
     price: 'RM 15,200',
     pax: '500 Pax',
-    image: '/assets/MSY_9586.jpg',
+    image: '/assets/images/hero/hero-wedding-11.jpg',
     desc: 'Bajet rendah? Tiada masalah. Pakej ini lengkap keperluan asas majlis.',
     includes: [
       '4 Set Khemah Arabian',
@@ -163,7 +163,7 @@ const PACKAGES_LIST = [
     price: 'RM 2,500',
     pax: 'Combo',
     featured: true,
-    image: '/assets/IMG_2343.jpg',
+    image: '/assets/images/bridal/bridal-boutique-02.jpg',
     desc: 'Gabungan servis paling penting. Anda cari tempat & makanan, kami uruskan penampilan & kenangan.',
     includes: [
       'Sepasang Baju Sanding (L&P)',
@@ -180,7 +180,7 @@ const PACKAGES_LIST = [
     title: 'Bridal Basic',
     price: 'RM 1,500',
     pax: 'Starter',
-    image: '/assets/FHP_0255.jpg',
+    image: '/assets/images/hero/hero-wedding-04.jpg',
     desc: 'Untuk pasangan yang mahukan busana & solekan sahaja tanpa pening kepala.',
     includes: [
       'Sepasang Baju Sanding (L&P)',
@@ -196,7 +196,7 @@ const PACKAGES_LIST = [
     title: 'Pelamin Tunang / Nikah',
     price: 'RM 800+',
     pax: 'Decor',
-    image: '/assets/K7300415.jpg',
+    image: '/assets/images/bridal/decoration-pelamin-01.jpg',
     desc: 'Hiasan pelamin mini untuk majlis pertunangan atau akad nikah di rumah.',
     includes: [
       'Pelamin Mini (8-10ft)',
@@ -227,7 +227,7 @@ const Packages: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/hall/lamanputeri/hall laman puteri7.jpeg"
+            src="/assets/images/hero/packages-header.jpg"
             alt="Packages Header Background"
             className="w-full h-full object-cover opacity-60"
           />

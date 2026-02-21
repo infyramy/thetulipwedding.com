@@ -10,17 +10,17 @@ const About: React.FC = () => {
 
   const [currentImage, setCurrentImage] = useState(0);
   const showcaseImages = [
-    "/assets/dtulips.jpg",
-    "/assets/dtulips 2.jpg"
+    "/assets/images/contact/boutique-exterior-01.jpg",
+    "/assets/images/contact/boutique-exterior-02.jpg"
   ];
 
   const teamImages = [
-    "/assets/k-1.jpeg",
-    "/assets/k-2.jpeg",
-    "/assets/k-3.jpeg",
-    "/assets/k-indoor.jpeg",
-    "/assets/k-onsite1.jpeg",
-    "/assets/k-frontstore.jpeg",
+    "/assets/images/bridal/bridal-showcase-01.jpg",
+    "/assets/images/bridal/bridal-showcase-02.jpg",
+    "/assets/images/bridal/bridal-showcase-03.jpg",
+    "/assets/images/contact/boutique-indoor.jpg",
+    "/assets/images/bridal/bridal-onsite-01.jpg",
+    "/assets/images/contact/boutique-frontstore.jpg",
   ];
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const About: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/kenalikami.jpeg"
+            src="/assets/images/hero/about-team-bg.jpg"
             alt="About Header Background"
             className="w-full h-full object-cover opacity-60"
           />

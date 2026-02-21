@@ -13,7 +13,7 @@ const Bridal: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/MSY_9586.jpg"
+            src="/assets/images/hero/hero-wedding-11.jpg"
             alt="Bridal Header Background"
             className="w-full h-full object-cover opacity-60"
           />

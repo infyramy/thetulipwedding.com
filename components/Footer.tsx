@@ -257,7 +257,7 @@ const Footer: React.FC = () => {
               <div className="space-y-4">
                 <Link to="/" className="block">
                   <img
-                    src="/assets/LOGO THE TULIP AI (2).svg"
+                    src="/assets/images/logo/logo-tulip-icon.svg"
                     alt={APP_NAME}
                     className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
                   />
