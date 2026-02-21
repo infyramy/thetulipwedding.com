@@ -14,6 +14,15 @@ const About: React.FC = () => {
     "/assets/dtulips 2.jpg"
   ];
 
+  const teamImages = [
+    "/assets/k-1.jpeg",
+    "/assets/k-2.jpeg",
+    "/assets/k-3.jpeg",
+    "/assets/k-indoor.jpeg",
+    "/assets/k-onsite1.jpeg",
+    "/assets/k-frontstore.jpeg",
+  ];
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % showcaseImages.length);
@@ -125,6 +134,20 @@ const About: React.FC = () => {
       {/* TEAM & CULTURE */}
       <Section bgColor="white" padding="lg">
         <div className="container mx-auto px-4">
+
+          {/* TEAM GALLERY MARQUEE */}
+          <div className="mb-20 overflow-hidden relative w-[100vw] left-1/2 -ml-[50vw]" style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}>
+            <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+              {[...teamImages, ...teamImages].map((img, idx) => (
+                <div key={idx} className="w-64 h-64 md:w-80 md:h-80 shrink-0 pr-4 md:pr-6 cursor-pointer">
+                  <div className="w-full h-full rounded-3xl overflow-hidden shadow-lg border-4 border-white bg-gray-100">
+                    <img src={img} alt={`Kenangan Bersama The Tulip ${idx}`} className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <span className="text-pink-600 font-bold tracking-widest uppercase text-sm mb-3 block">Pasukan Kami</span>
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal mb-6 tracking-tight">Santai Tapi Professional</h2>
