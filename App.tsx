@@ -26,7 +26,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow relative">{children}</main>
+      <main className="flex-grow relative pb-24 md:pb-32">{children}</main>
       <Footer />
     </div>
   );
