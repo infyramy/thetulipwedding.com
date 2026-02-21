@@ -17,8 +17,46 @@ const Footer: React.FC = () => {
 
   return (
     <>
+      {/* SOCIAL MEDIA SHOWCASE (Half on Last Section, Half on Footer) */}
+      <div className="relative z-50 w-full px-4 -mt-24 mb-10 pointer-events-none">
+        <div className="container mx-auto max-w-5xl">
+          <div className="bg-white/10 backdrop-blur-3xl border border-white/20 rounded-[2rem] p-6 shadow-2xl overflow-hidden relative pointer-events-auto">
+            {/* Design accents */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-pink-500/20 blur-[80px] rounded-full pointer-events-none -translate-y-1/2"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/20 blur-[80px] rounded-full pointer-events-none translate-y-1/2"></div>
+
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="text-center md:text-left">
+                <h3 className="font-serif text-2xl md:text-3xl font-bold text-white mb-2">Ikuti Perkembangan Kami</h3>
+                <p className="text-gray-300 text-sm md:text-base font-light">Lihat hasil kerja terkini, video di sebalik tabir dan inspirasi majlis di media sosial rasmi kami.</p>
+              </div>
+              <div className="flex items-center gap-4 shrink-0">
+                <a
+                  href={SOCIAL_LINKS.INSTAGRAM}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white px-5 py-3 rounded-xl font-medium shadow-lg hover:shadow-pink-500/30 hover:-translate-y-1 transition-all duration-300"
+                >
+                  <Instagram size={20} />
+                  <span>@dtulip_wedding</span>
+                </a>
+                <a
+                  href={SOCIAL_LINKS.TIKTOK}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 bg-black text-white px-5 py-3 rounded-xl font-medium shadow-lg hover:shadow-black/50 border border-white/20 hover:border-white/50 hover:-translate-y-1 transition-all duration-300"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg>
+                  <span>@dtulip_wedding</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* COMPACT FOOTER FORM & CTA */}
-      <section className="relative py-10 bg-charcoal overflow-hidden border-t border-white/5">
+      <section className="relative py-14 bg-charcoal overflow-hidden border-t border-white/5 pt-16">
         {/* Enhanced Graphic Backgrounds */}
         <div className="absolute inset-0 bg-noise opacity-[0.15] pointer-events-none"></div>
         <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
