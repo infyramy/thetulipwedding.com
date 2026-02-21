@@ -185,33 +185,11 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const HALLS: Hall[] = [
   {
-    id: 'h_villa',
-    name: 'Villa Kemboja',
-    capacity: 'Max 1000 Pax',
-    location: 'Batu Pahat',
-    address: '6A, Jalan Kampung Parit Lapis / Peserai, Kampung Peserai Pantai, 83000 Batu Pahat, Johor',
-    priceRange: 'Pakej Bermula RM 22,000',
-    facilities: ['Bilik Pengantin', 'Parking Luas', 'Surau', 'Bilik Persalinan'],
-    images: [
-      '/assets/hall/villa kemboja/villa kemboja1.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja2.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja3.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja4.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja5.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja6.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja7.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja8.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja9.jpeg',
-      '/assets/hall/villa kemboja/villa kemboja10.jpeg',
-    ],
-    coordinates: { lat: 1.8494, lng: 102.9288 },
-  },
-  {
     id: 'h_laman',
-    name: 'Dewan Intimate Exclusive',
+    name: 'LAMAN PUTERI',
     capacity: 'Max 800 Pax',
     location: 'Batu Pahat',
-    address: 'No 2 Jalan Siswa Jaya 1, Taman Siswa Jaya, 86400 Batu Pahat, Johor',
+    address: 'No 2 jalan siswa Jaya 1 taman siswa Jaya 86400 parit raja, Batu Pahat, Johor',
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Dewan Terbuka Eksklusif', 'Ruang Makan Selesa', 'Parking Tetamu', 'Bilik Pengantin'],
     images: [
@@ -227,7 +205,7 @@ export const HALLS: Hall[] = [
   },
   {
     id: 'h_glass',
-    name: 'Kluang Container Glasshouse',
+    name: 'KLUANG CONTAINER GLASSHOUSE',
     capacity: 'Max 600 Pax',
     location: 'Kluang',
     address: 'Lot 10943, Jalan 2, Taman Bersatu, 86000 Kluang, Johor',
@@ -247,10 +225,10 @@ export const HALLS: Hall[] = [
   },
   {
     id: 'h_barokah',
-    name: 'Barokah Sri Village',
+    name: 'BAROKAH SRI VILLAGE',
     capacity: 'Max 1000 Pax',
     location: 'Batu Pahat',
-    address: 'Lot 6548 Lor Muda (T/L JKB 316) PT Karjo, 86400 Batu Pahat, Johor',
+    address: "Lot 6548 Lor Muda (T/L JKB 316) PT Karjo, 86400 Parit Raja, Batu Pahat, Johor Darul Ta'zim",
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Suasana Desa Damai', 'Dewan Luas', 'Parking Mudah', 'Surau'],
     images: [
@@ -268,6 +246,28 @@ export const HALLS: Hall[] = [
       '/assets/hall/barokah/barokah sril village12.jpeg',
     ],
     coordinates: { lat: 1.8500, lng: 102.9300 },
+  },
+  {
+    id: 'h_villa',
+    name: 'VILLA KEMBOJA',
+    capacity: 'Max 1000 Pax',
+    location: 'Batu Pahat',
+    address: '6A, Jalan Kampung Parit Lapis / Peserai, Kampung Peserai Pantai, 83000 Batu Pahat, Johor',
+    priceRange: 'Pakej Bermula RM 22,000',
+    facilities: ['Bilik Pengantin', 'Parking Luas', 'Surau', 'Bilik Persalinan'],
+    images: [
+      '/assets/hall/villa kemboja/villa kemboja1.jpeg',
+      '/assets/hall/villa kemboja/villa kemboja2.jpeg',
+      '/assets/hall/villa kemboja/villa kemboja3.jpeg',
+      '/assets/hall/villa kemboja/villa kemboja4.jpeg',
+      '/assets/hall/villa kemboja/villa kemboja5.jpeg',
+      '/assets/hall/villa kemboja/villa kemboja6.jpeg',
+      '/assets/hall/villa kemboja/villa kemboja7.jpeg',
+      '/assets/hall/villa kemboja/villa kemboja8.jpeg',
+      '/assets/hall/villa kemboja/villa kemboja9.jpeg',
+      '/assets/hall/villa kemboja/villa kemboja10.jpeg',
+    ],
+    coordinates: { lat: 1.8494, lng: 102.9288 },
   },
 ];
 
