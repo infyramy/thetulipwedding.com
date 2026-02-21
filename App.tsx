@@ -17,7 +17,13 @@ import PageTransition from './components/PageTransition';
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Delay scroll to top so it happens when the screen is fully covered
+    // by the PageTransition exit animation (which takes ~800-1000ms)
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 800);
+
+    return () => clearTimeout(timer);
   }, [pathname]);
   return null;
 };
