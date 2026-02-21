@@ -1,0 +1,12 @@
+name = "tulip-social-api"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Optional: KV namespace for caching (run: wrangler kv namespace create SOCIAL_CACHE)
+# Then uncomment and replace with your namespace ID:
+# [[kv_namespaces]]
+# binding = "SOCIAL_CACHE"
+# id = "YOUR_KV_NAMESPACE_ID"
+
+[observability]
+enabled = true
