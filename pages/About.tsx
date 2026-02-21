@@ -28,7 +28,7 @@ const About: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/MSY_3223.jpg"
+            src="/assets/kenalikami.jpeg"
             alt="About Header Background"
             className="w-full h-full object-cover opacity-60"
           />
@@ -100,14 +100,14 @@ const About: React.FC = () => {
             </div>
             {/* Item 2 */}
             <div className="flex flex-row items-center justify-center gap-4 p-4 rounded-2xl hover:bg-pink-50/50 transition-colors">
-              <span className="text-pink-600 font-bold text-4xl font-serif shrink-0">2k+</span>
+              <span className="text-pink-600 font-bold text-4xl font-serif shrink-0">10k</span>
               <span className="text-xs uppercase tracking-widest text-gray-500 font-bold text-left leading-tight">Pasangan<br className="block" /> Dirai</span>
             </div>
             {/* Item 3 */}
             <div className="flex flex-row items-center justify-center gap-4 p-4 rounded-2xl hover:bg-pink-50/50 transition-colors">
-              <span className="text-pink-600 font-bold text-4xl font-serif shrink-0">80+</span>
+              <span className="text-pink-600 font-bold text-4xl font-serif shrink-0">100+</span>
               <div className="flex flex-col text-left">
-                <span className="text-xs uppercase tracking-widest text-gray-500 font-bold leading-tight">Dulang Hantaran<br className="block" /> Seminggu*</span>
+                <span className="text-xs uppercase tracking-widest text-gray-500 font-bold leading-tight">Dulang<br className="block" /> Hantaran</span>
               </div>
             </div>
             {/* Item 4 */}
