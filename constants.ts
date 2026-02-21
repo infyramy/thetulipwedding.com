@@ -2,7 +2,7 @@ import { Package, Testimonial, Vendor, Hall, GalleryItem } from './types';
 
 export const APP_NAME = "The Tulip Weddings";
 export const WHATSAPP_NUMBER = "60127707912";
-export const CONTACT_EMAIL = "thetulipweddings@gmail.com";
+export const CONTACT_EMAIL = "dtulipdeco@gmail.com";
 
 export const SOCIAL_LINKS = {
   INSTAGRAM: "https://www.instagram.com/dtulip_wedding/?__d=1%2F", // Keep ID if username is same, update if changed
@@ -191,7 +191,7 @@ export const HALLS: Hall[] = [
     location: 'Batu Pahat',
     address: '6A, Jalan Kampung Parit Lapis / Peserai, Kampung Peserai Pantai, 83000 Batu Pahat, Johor',
     priceRange: 'Pakej Bermula RM 22,000',
-    facilities: ['5 Bilik Tidur Family', 'Dewan Aircond', 'Parking Luas', 'Surau', 'Bilik Persalinan'],
+    facilities: ['Bilik Pengantin', 'Parking Luas', 'Surau', 'Bilik Persalinan'],
     images: [
       '/assets/hall/villa kemboja/villa kemboja1.jpeg',
       '/assets/hall/villa kemboja/villa kemboja2.jpeg',
@@ -208,12 +208,12 @@ export const HALLS: Hall[] = [
   },
   {
     id: 'h_laman',
-    name: 'Laman Puteri',
+    name: 'Dewan Intimate Exclusive',
     capacity: 'Max 800 Pax',
     location: 'Batu Pahat',
     address: 'No 2 Jalan Siswa Jaya 1, Taman Siswa Jaya, 86400 Batu Pahat, Johor',
     priceRange: 'Hubungi untuk Harga',
-    facilities: ['Dewan Terbuka Eksklusif', 'Ruang Makan Selesa', 'Parking Tetamu', 'Surau & Bilik Persalinan'],
+    facilities: ['Dewan Terbuka Eksklusif', 'Ruang Makan Selesa', 'Parking Tetamu', 'Bilik Pengantin'],
     images: [
       '/assets/hall/lamanputeri/hall laman puteri1.jpeg',
       '/assets/hall/lamanputeri/hall laman puteri2.jpeg',
@@ -232,7 +232,7 @@ export const HALLS: Hall[] = [
     location: 'Kluang',
     address: 'Lot 10943, Jalan 2, Taman Bersatu, 86000 Kluang, Johor',
     priceRange: 'Hubungi untuk Harga',
-    facilities: ['Konsep Unik & Moden', 'Full Aircond', 'Lighting Ambience', 'Spot OOTD Viral'],
+    facilities: ['Konsep Unik & Moden', 'Bilik Pengantin', 'Lighting Ambience', 'Spot OOTD Viral'],
     images: [
       '/assets/hall/kluang container/kluang container hotel1.jpeg',
       '/assets/hall/kluang container/kluang container hotel2.jpeg',

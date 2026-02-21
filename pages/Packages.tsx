@@ -46,7 +46,7 @@ const PACKAGES_LIST = [
     category: 'hall',
     title: 'HALL BAROKAH SRI VILLAGE',
     price: 'RM 22,000',
-    pax: 'Catering',
+    pax: '',
     featured: true,
     image: '/assets/hall/barokah/barokah sril village1.jpeg',
     desc: 'Pakej "All-in" paling popular. Termasuk penginapan homestay keluarga.',
@@ -65,7 +65,7 @@ const PACKAGES_LIST = [
     category: 'hall',
     title: 'Pakej Dewan Intimate',
     price: 'RM 14,600',
-    pax: 'Catering',
+    pax: '',
     image: '/assets/hall/lamanputeri/hall laman puteri1.jpeg',
     desc: 'Untuk majlis resepsi formal dan selesa di dewan berhawa dingin sepenuhnya.',
     includes: [
@@ -84,7 +84,7 @@ const PACKAGES_LIST = [
     category: 'hall',
     title: 'GRAND GLASS HALL',
     price: 'RM 21,500',
-    pax: 'Katering Lengkap',
+    pax: '',
     image: '/assets/hall/kluang container/kluang container hotel1.jpeg',
     desc: 'Sesuai untuk majlis sederhana dengan bajet yang berpatutan namun tetap nampak mewah.',
     includes: [
@@ -323,11 +323,13 @@ const Packages: React.FC = () => {
                       alt={pkg.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute bottom-4 left-4 z-20">
-                      <span className="inline-block px-2 py-1 bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-md text-[10px] font-bold uppercase tracking-wider">
-                        {pkg.pax}
-                      </span>
-                    </div>
+                    {pkg.pax && (
+                      <div className="absolute bottom-4 left-4 z-20">
+                        <span className="inline-block px-2 py-1 bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-md text-[10px] font-bold uppercase tracking-wider">
+                          {pkg.pax}
+                        </span>
+                      </div>
+                    )}
                   </div>
 
                   <div className="p-8 pb-0">
