@@ -189,8 +189,8 @@ export const HALLS: Hall[] = [
     name: 'Laman Puteri',
     capacity: 'Max 800 Pax',
     location: 'Batu Pahat',
-    address: 'No. 2, Jalan Siswa Jaya 1, Taman Siswa Jaya, 86400 Parit Raja, Batu Pahat, Johor',
-    priceRange: 'Hubungi untuk Harga',
+    address: 'No 2 jalan siswa Jaya 1 taman siswa Jaya 86400 parit raja, Batu Pahat, Johor',
+    priceRange: 'Pakej Bermula RM 14,600',
     facilities: ['Dewan Terbuka Eksklusif', 'Ruang Makan Selesa', 'Parking Tetamu', 'Bilik Pengantin'],
     images: [
       '/assets/images/hall/laman-puteri/laman-puteri-01.jpg',
@@ -209,7 +209,7 @@ export const HALLS: Hall[] = [
     capacity: 'Max 600 Pax',
     location: 'Kluang',
     address: 'Lot 10943, Jalan 2, Taman Bersatu, 86000 Kluang, Johor',
-    priceRange: 'Hubungi untuk Harga',
+    priceRange: 'Pakej Bermula RM 26,000',
     facilities: ['Konsep Unik & Moden', 'Bilik Pengantin', 'Lighting Ambience', 'Spot OOTD Viral'],
     images: [
       '/assets/images/hall/kluang-glasshouse/kluang-glasshouse-01.jpg',
@@ -228,8 +228,8 @@ export const HALLS: Hall[] = [
     name: 'Barokah Sri Village',
     capacity: 'Max 1000 Pax',
     location: 'Batu Pahat',
-    address: "Lot 6548, Lorong Muda (T/L JKB 316) Pt Karjo, 86400 Parit Raja, Batu Pahat, Johor Darul Ta'zim",
-    priceRange: 'Hubungi untuk Harga',
+    address: "Lot 6548 Lor Muda (T/L JKB 316) PT Karjo, 86400 Parit Raja, Batu Pahat, Johor Darul Ta'zim",
+    priceRange: 'Pakej Bermula RM 19,500',
     facilities: ['Suasana Desa Damai', 'Dewan Luas', 'Parking Mudah', 'Surau'],
     images: [
       '/assets/images/hall/barokah-village/barokah-village-01.jpg',
@@ -253,7 +253,7 @@ export const HALLS: Hall[] = [
     capacity: 'Max 1000 Pax',
     location: 'Batu Pahat',
     address: '6A, Jalan Kampung Parit Lapis / Peserai, Kampung Peserai Pantai, 83000 Batu Pahat, Johor',
-    priceRange: 'Pakej Bermula RM 22,000',
+    priceRange: 'Pakej Bermula RM 21,700',
     facilities: ['Bilik Pengantin', 'Parking Luas', 'Surau', 'Bilik Persalinan'],
     images: [
       '/assets/images/hall/villa-kemboja/villa-kemboja-01.jpg',
