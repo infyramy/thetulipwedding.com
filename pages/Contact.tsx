@@ -33,9 +33,9 @@ const Contact: React.FC = () => {
       </div>
 
       <Section bgColor="silver">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row gap-12 lg:gap-24">
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row gap-8 lg:gap-16">
           {/* Contact Info */}
-          <div className="lg:w-1/3 space-y-8">
+          <div className="lg:w-5/12 space-y-8">
             <div className="bg-white p-10 rounded-[2rem] shadow-xl border border-gray-100">
               <h3 className="font-serif text-2xl font-bold mb-8 text-charcoal">Info The Tulip</h3>
               <ul className="space-y-8">
@@ -44,35 +44,35 @@ const Contact: React.FC = () => {
                     <MapPin size={20} />
                   </div>
                   <div className="flex-1">
-                    <a
-                      href="https://share.google/bI6q4Xwu6g96qfxzy"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="font-bold text-charcoal text-lg hover:text-pink-600 transition-colors inline-block mb-2"
-                    >
+                    <p className="font-bold text-charcoal text-lg mb-2">
                       Lokasi Operasi
-                    </a>
-                    <a
-                      href="https://share.google/bI6q4Xwu6g96qfxzy"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block mb-3 overflow-hidden rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
-                    >
-                      <img
-                        src="/assets/dtulips.jpg"
-                        alt="The Tulip Weddings Gallery"
-                        className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
-                      />
-                    </a>
-                    <p className="text-gray-500 text-sm leading-relaxed mb-2">
+                    </p>
+                    <iframe
+                      src="https://maps.google.com/maps?q=The%20Tulip%20Wedding%20%26%20Events,%20Parit%20Raja,%20Batu%20Pahat&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                      width="100%"
+                      height="200"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="rounded-xl border border-gray-100 shadow-sm mb-4"
+                    ></iframe>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-1">
                       Pusat Perniagaan Parit Raja,<br />
                       Mukim 11, Jalan Parit Botak,<br />
                       86400 Batu Pahat, Johor
                     </p>
-                    <div className="inline-flex items-center gap-1.5 bg-pink-50 text-pink-700 px-3 py-1 rounded-full text-[10px] font-bold tracking-wide uppercase">
-                      <MapPin size={10} />
-                      Meliputi seluruh Johor (kecuali Mersing)
-                    </div>
+                    <a
+                      href="https://share.google/bI6q4Xwu6g96qfxzy"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-pink-600 font-semibold text-sm hover:underline inline-flex items-center gap-1 mb-2"
+                    >
+                      Buka di Google Maps &rarr;
+                    </a>
+                    <p className="text-gray-400 text-xs italic">
+                      * Meliputi seluruh Johor (kecuali Mersing)
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-center gap-4 group">
@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
           </div>
 
           {/* FAQ Section */}
-          <div className="lg:w-2/3">
+          <div className="lg:w-7/12">
             <FAQ />
           </div>
         </div>
