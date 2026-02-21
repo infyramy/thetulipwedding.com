@@ -186,10 +186,10 @@ export const TESTIMONIALS: Testimonial[] = [
 export const HALLS: Hall[] = [
   {
     id: 'h_laman',
-    name: 'LAMAN PUTERI',
+    name: 'Laman Puteri',
     capacity: 'Max 800 Pax',
     location: 'Batu Pahat',
-    address: 'No 2 jalan siswa Jaya 1 taman siswa Jaya 86400 parit raja, Batu Pahat, Johor',
+    address: 'No. 2, Jalan Siswa Jaya 1, Taman Siswa Jaya, 86400 Parit Raja, Batu Pahat, Johor',
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Dewan Terbuka Eksklusif', 'Ruang Makan Selesa', 'Parking Tetamu', 'Bilik Pengantin'],
     images: [
@@ -205,7 +205,7 @@ export const HALLS: Hall[] = [
   },
   {
     id: 'h_glass',
-    name: 'KLUANG CONTAINER GLASSHOUSE',
+    name: 'Kluang Container Glasshouse',
     capacity: 'Max 600 Pax',
     location: 'Kluang',
     address: 'Lot 10943, Jalan 2, Taman Bersatu, 86000 Kluang, Johor',
@@ -225,10 +225,10 @@ export const HALLS: Hall[] = [
   },
   {
     id: 'h_barokah',
-    name: 'BAROKAH SRI VILLAGE',
+    name: 'Barokah Sri Village',
     capacity: 'Max 1000 Pax',
     location: 'Batu Pahat',
-    address: "Lot 6548 Lor Muda (T/L JKB 316) PT Karjo, 86400 Parit Raja, Batu Pahat, Johor Darul Ta'zim",
+    address: "Lot 6548, Lorong Muda (T/L JKB 316) Pt Karjo, 86400 Parit Raja, Batu Pahat, Johor Darul Ta'zim",
     priceRange: 'Hubungi untuk Harga',
     facilities: ['Suasana Desa Damai', 'Dewan Luas', 'Parking Mudah', 'Surau'],
     images: [
@@ -249,7 +249,7 @@ export const HALLS: Hall[] = [
   },
   {
     id: 'h_villa',
-    name: 'VILLA KEMBOJA',
+    name: 'Villa Kemboja',
     capacity: 'Max 1000 Pax',
     location: 'Batu Pahat',
     address: '6A, Jalan Kampung Parit Lapis / Peserai, Kampung Peserai Pantai, 83000 Batu Pahat, Johor',

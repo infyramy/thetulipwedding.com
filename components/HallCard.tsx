@@ -87,6 +87,7 @@ const HallCard: React.FC<HallCardProps> = ({ hall }) => {
           <MapPin size={18} className="mr-2 mt-1 text-pink-500 shrink-0" />
           <div className="flex flex-col">
             <span className="text-charcoal font-bold">{hall.location}</span>
+            <span className="text-xs text-gray-400 mt-1 font-normal leading-snug">{hall.address}</span>
           </div>
         </div>
 
