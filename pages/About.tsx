@@ -54,10 +54,10 @@ const About: React.FC = () => {
               B & J SOUTHERN SDN BHD (1557712-P)
             </span>
             <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 text-white uppercase leading-tight drop-shadow-md">
-              Kenali Kami
+              KENALI KAMI
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed">
-              “Designing Your Perfect Wedding”
+              “Merealisasikan Majlis Idaman Anda”
             </p>
           </motion.div>
         </div>
@@ -136,7 +136,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
 
           {/* TEAM GALLERY MARQUEE */}
-          <div className="mb-20 overflow-hidden relative w-[100vw] left-1/2 -ml-[50vw]" style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}>
+          <div className="mb-20 overflow-hidden relative w-full" style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}>
             <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
               {[...teamImages, ...teamImages].map((img, idx) => (
                 <div key={idx} className="w-64 h-64 md:w-80 md:h-80 shrink-0 pr-4 md:pr-6 cursor-pointer">
