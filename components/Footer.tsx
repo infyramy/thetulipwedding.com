@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
   return (
     <>
       {/* SOCIAL MEDIA FEED (SCROLLING GRID) */}
-      <div className="w-full bg-white py-12 border-t border-gray-100 overflow-hidden pb-40 relative z-40">
+      <div className="w-full bg-white py-12 border-t border-gray-100 overflow-hidden pb-32 relative z-40">
         <div className="container mx-auto px-4 mb-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
@@ -188,7 +188,7 @@ const Footer: React.FC = () => {
 
         <div className="container mx-auto px-4 relative z-50">
           {/* Overlapping Container */}
-          <div className="bg-[#1A1A1A] border border-white/10 p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden -mt-32 sm:-mt-40 mb-16 max-w-6xl mx-auto">
+          <div className="bg-[#1A1A1A] border border-white/10 p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden -mt-16 sm:-mt-20 mb-16 max-w-6xl mx-auto">
 
             <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-pink-600/20 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 
