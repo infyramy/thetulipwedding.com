@@ -51,24 +51,24 @@ const FAQ: React.FC = () => {
 
     const faqs = [
         {
+            question: "Adakah The Tulip Weddings menawarkan pakej lengkap untuk majlis perkahwinan?",
+            answer: "Ya, kami adalah 'One Stop Wedding Centre' yang menyediakan perkhidmatan merangkumi Dewan, Katering, Butik Pengantin (Busana), dan Pelamin di bawah satu bumbung bagi memudahkan urusan hari bahagia anda."
+        },
+        {
             question: "Bagaimana cara untuk menempah tarikh majlis?",
-            answer: "Untuk menempah tarikh, anda boleh semak kekosongan melalui borang di bahagian bawah laman web ini, atau hubungi kami terus melalui WhatsApp. Deposit permulaan diperlukan untuk mengunci tarikh pilihan anda."
+            answer: "Untuk menempah tarikh, anda boleh hubungi perunding perkahwinan kami terus melalui butang WhatsApp yang disediakan. Tarikh rasmi akan dikunci setelah perbincangan awal dan urusan tempahan diselesaikan."
         },
         {
-            question: "Berapa lama tempoh sewaan dewan?",
-            answer: "Pakej standard kami merangkumi penggunaan dewan selama 5-6 jam untuk majlis resepsi. Kami juga menyediakan masa tambahan untuk persiapan pelamin dan katering sebelum majlis bermula."
+            question: "Bolehkah saya menempah salah satu servis secara berasingan (contohnya katering atau dewan sahaja)?",
+            answer: "Kami pakar dalam menyediakan pakej perkahwinan yang komprehensif. Walaubagaimanapun, kami sentiasa sedia berbincang sekiranya anda mempunyai keperluan spesifik. Sila hubungi kami untuk sebarang pertanyaan lanjut mengenai fleksibiliti pakej."
         },
         {
-            question: "Adakah katering luar dibenarkan?",
-            answer: "Kami menawarkan pakej lengkap termasuk katering premium. Walaubagaimanapun, jika anda mempunyai pilihan katering sendiri, sila bincang dengan pihak pengurusan kami untuk syarat-syarat tertentu."
+            question: "Berapakah kapasiti tetamu untuk dewan bagi sesebuah majlis?",
+            answer: "Dewan kami mempunyai kemudahan ruang yang selesa dan susunan yang fleksibel untuk menampung para jemputan. Untuk pengesahan bilangan tetamu secara tepat berdasarkan jenis majlis anda (buffet atau dome), kami sarankan anda menetapkan sesi konsultasi bersama kami."
         },
         {
-            question: "Apakah kapasiti maksimum dewan?",
-            answer: "Dewan kami boleh memuatkan sehingga 1,000 tetamu secara 'buffet flow' atau sekitar 300-400 tetamu untuk susunan meja bulat (sit-down dinner) pada satu masa."
-        },
-        {
-            question: "Adakah kemudahan parking disediakan?",
-            answer: "Ya, kami menyediakan ruang parking yang luas dan selesa untuk tetamu anda, lengkap dengan petugas trafik RELA (untuk pakej tertentu) bagi memastikan kelancaran trafik."
+            question: "Adakah kemudahan tempat letak kereta (parking) disediakan?",
+            answer: "Ya, kemudahan letak kereta ada disediakan demi menjamin keselesaan tetamu anda semasa majlis berlangsung."
         }
     ];
 
