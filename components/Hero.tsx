@@ -50,17 +50,17 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-30 container mx-auto px-4 pt-24 md:pt-28 lg:pt-32 text-center text-white">
-        <div className="max-w-5xl mx-auto flex flex-col items-center animate-fade-in-up">
+      <div className="relative z-30 container mx-auto px-4 mt-16 md:mt-24 pt-32 md:pt-40 lg:pt-32 text-center text-white flex flex-col items-center justify-center min-h-screen">
+        <div className="max-w-5xl w-full mx-auto flex flex-col items-center animate-fade-in-up">
 
-          {/* Authority Tagline - Slightly smaller vertical padding */}
+          {/* Authority Tagline */}
           <div className="inline-flex items-center gap-2 px-5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[10px] md:text-xs tracking-[0.15em] uppercase font-semibold text-white mb-6 hover:bg-white/20 transition-colors cursor-default shadow-lg">
             <Award size={14} className="text-pink-400" />
             <span>Pakar Perkahwinan Premium Johor</span>
           </div>
 
-          {/* Headline - Scaled Down (was 5xl/7xl/9xl -> now 4xl/6xl/8xl) */}
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl font-bold leading-[1.1] tracking-tight drop-shadow-2xl mb-6 flex flex-col items-center justify-center">
+          {/* Headline - Larger on Mobile */}
+          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight drop-shadow-2xl mb-6 flex flex-col items-center justify-center w-full">
             <BlurText
               text="Pesona Cinta"
               delay={200}
@@ -68,6 +68,7 @@ const Hero: React.FC = () => {
               animateBy="words"
               direction="bottom"
               className="flex justify-center flex-wrap"
+              textClassName="pb-1"
             />
             <BlurText
               text="Raja Sehari"
@@ -75,15 +76,15 @@ const Hero: React.FC = () => {
               globalDelay={1.4}
               animateBy="words"
               direction="bottom"
-              className="flex justify-center flex-wrap mt-2 italic"
+              className="flex justify-center flex-wrap mt-2 italic pb-4 sm:pb-6"
               textClassName="text-transparent bg-clip-text bg-gradient-to-r from-pink-200 via-white to-pink-200"
             />
           </h1>
 
-          {/* Subheadline - Scaled Down & tighter margin */}
+          {/* Subheadline - Fixed responsive breaking */}
           <p className="font-sans text-sm md:text-lg text-gray-100 leading-relaxed max-w-2xl mx-auto font-light tracking-wide drop-shadow-lg mb-10 opacity-95">
-            Pakar pengurusan majlis perkahwinan lengkap di Batu Pahat & seluruh Johor. <br className="hidden md:block" />
-            <span className="font-semibold text-pink-200">Dewan • Katering • Busana • Pelamin</span> — Semua di bawah satu bumbung.
+            <span className="block mb-1">Pakar pengurusan majlis perkahwinan lengkap di Batu Pahat & seluruh Johor.</span>
+            <span className="font-semibold text-pink-200 block">Dewan • Katering • Busana • Pelamin — Semua di bawah satu bumbung.</span>
           </p>
 
           {/* CTA Buttons - Slightly reduced padding */}
