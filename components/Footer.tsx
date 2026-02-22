@@ -263,7 +263,7 @@ const Footer: React.FC = () => {
                   />
                 </Link>
                 <p className="text-gray-400 text-xs leading-relaxed max-w-xs font-light">
-                  Premium Wedding Planner & Hall di Batu Pahat. Mencipta memori abadi dengan sentuhan elegan moden untuk seluruh warga Johor.
+                  Premium Wedding Planner & Hall di Johor. Mencipta memori abadi dengan sentuhan elegan moden untuk seluruh warga Johor.
                 </p>
                 <div className="flex space-x-3 pt-1">
                   <a href={SOCIAL_LINKS.INSTAGRAM} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-pink-600 hover:border-pink-600 hover:text-white transition-all text-gray-400">

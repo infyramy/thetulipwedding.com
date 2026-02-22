@@ -250,7 +250,7 @@ const Home: React.FC = () => {
             </div>
             {/* Item 2 */}
             <div className="flex flex-row items-center justify-center gap-3 p-4">
-              <span className="text-pink-600 font-bold text-3xl font-serif shrink-0">500+</span>
+              <span className="text-pink-600 font-bold text-3xl font-serif shrink-0">10K+</span>
               <span className="text-xs uppercase tracking-widest text-gray-500 font-bold text-left leading-tight">Majlis<br className="md:hidden" /> Dijayakan</span>
             </div>
             {/* Item 3 */}
