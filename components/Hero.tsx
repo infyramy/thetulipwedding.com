@@ -60,20 +60,22 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Headline - Scaled Down (was 5xl/7xl/9xl -> now 4xl/6xl/8xl) */}
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl font-bold leading-[1.1] tracking-tight drop-shadow-2xl mb-6 flex flex-col items-center">
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl font-bold leading-[1.1] tracking-tight drop-shadow-2xl mb-6 flex flex-col items-center justify-center">
             <BlurText
               text="Pesona Cinta"
-              delay={150}
+              delay={200}
+              globalDelay={0.8}
               animateBy="words"
               direction="bottom"
-              className="justify-center"
+              className="flex justify-center flex-wrap"
             />
             <BlurText
               text="Raja Sehari"
-              delay={150}
+              delay={200}
+              globalDelay={1.4}
               animateBy="words"
               direction="bottom"
-              className="text-transparent bg-clip-text bg-gradient-to-r from-pink-200 via-white to-pink-200 italic justify-center mt-2"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-pink-200 via-white to-pink-200 italic flex justify-center flex-wrap mt-2"
             />
           </h1>
 

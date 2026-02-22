@@ -14,6 +14,7 @@ const buildKeyframes = (from: any, steps: any[]) => {
 interface BlurTextProps {
     text?: string;
     delay?: number;
+    globalDelay?: number;
     className?: string;
     animateBy?: 'words' | 'letters';
     direction?: 'top' | 'bottom';
@@ -29,6 +30,7 @@ interface BlurTextProps {
 const BlurText: React.FC<BlurTextProps> = ({
     text = '',
     delay = 200,
+    globalDelay = 0,
     className = '',
     animateBy = 'words',
     direction = 'top',
@@ -92,7 +94,7 @@ const BlurText: React.FC<BlurTextProps> = ({
                 const spanTransition: any = {
                     duration: totalDuration,
                     times,
-                    delay: (index * delay) / 1000
+                    delay: globalDelay + ((index * delay) / 1000)
                 };
                 spanTransition.ease = easing;
 
