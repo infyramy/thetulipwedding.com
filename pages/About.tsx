@@ -109,8 +109,8 @@ const About: React.FC = () => {
             </div>
             {/* Item 2 */}
             <div className="flex flex-row items-center justify-center gap-4 p-4 rounded-2xl hover:bg-pink-50/50 transition-colors">
-              <span className="text-pink-600 font-bold text-4xl font-serif shrink-0">10k</span>
-              <span className="text-xs uppercase tracking-widest text-gray-500 font-bold text-left leading-tight">Pasangan<br className="block" /> Dirai</span>
+              <span className="text-pink-600 font-bold text-4xl font-serif shrink-0">10K+</span>
+              <span className="text-xs uppercase tracking-widest text-gray-500 font-bold text-left leading-tight">Majlis<br className="block" /> Dijayakan</span>
             </div>
             {/* Item 3 */}
             <div className="flex flex-row items-center justify-center gap-4 p-4 rounded-2xl hover:bg-pink-50/50 transition-colors">
