@@ -242,8 +242,7 @@ const Packages: React.FC = () => {
             Pakej & Harga
           </h1>
           <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed">
-            Pilih kategori yang sesuai dengan perancangan majlis anda. <br />
-            Harga telus, tiada caj tersembunyi.
+            Sedia merancang mengikut bajet anda? Kami menawarkan pelbagai pilihan pakej lengkap untuk majlis di Batu Pahat dan seluruh Johor.
           </p>
         </div>
       </div>

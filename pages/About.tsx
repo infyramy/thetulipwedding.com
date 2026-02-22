@@ -51,13 +51,13 @@ const About: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="text-pink-400 font-bold tracking-[0.2em] uppercase text-xs md:text-sm mb-3 block">
-              B & J SOUTHERN SDN BHD (1557712-P)
+              Tentang Kami
             </span>
             <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-md">
               Kenali Kami
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed">
-              Menyempurnakan Perjalanan Hari Bahagia Anda
+              Lebih dari sekadar pengurusan majlis, kami komited merealisasikan setiap impian perkahwinan anda di Batu Pahat dan seluruh Johor.
             </p>
           </motion.div>
         </div>
