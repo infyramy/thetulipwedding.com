@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Button from './Button';
 import { ArrowDown, MessageCircle, Award } from 'lucide-react';
 import { WHATSAPP_NUMBER } from '../constants';
+import BlurText from './BlurText';
 
 const HERO_IMAGES = [
   "/assets/images/bridal/decoration-pelamin-01.jpg",
@@ -49,21 +50,31 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-30 container mx-auto px-4 text-center text-white">
+      <div className="relative z-30 container mx-auto px-4 pt-24 md:pt-28 lg:pt-32 text-center text-white">
         <div className="max-w-5xl mx-auto flex flex-col items-center animate-fade-in-up">
 
           {/* Authority Tagline - Slightly smaller vertical padding */}
-          <div className="inline-flex items-center gap-2 px-5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs md:text-sm tracking-[0.15em] uppercase font-semibold text-white mb-6 hover:bg-white/20 transition-colors cursor-default shadow-lg">
+          <div className="inline-flex items-center gap-2 px-5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[10px] md:text-xs tracking-[0.15em] uppercase font-semibold text-white mb-6 hover:bg-white/20 transition-colors cursor-default shadow-lg">
             <Award size={14} className="text-pink-400" />
             <span>Pakar Perkahwinan Premium Johor</span>
           </div>
 
           {/* Headline - Scaled Down (was 5xl/7xl/9xl -> now 4xl/6xl/8xl) */}
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl font-bold leading-[1.1] tracking-tight drop-shadow-2xl mb-6">
-            Pesona Cinta <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-200 via-white to-pink-200 italic">
-              Raja Sehari
-            </span>
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl font-bold leading-[1.1] tracking-tight drop-shadow-2xl mb-6 flex flex-col items-center">
+            <BlurText
+              text="Pesona Cinta"
+              delay={150}
+              animateBy="words"
+              direction="bottom"
+              className="justify-center"
+            />
+            <BlurText
+              text="Raja Sehari"
+              delay={150}
+              animateBy="words"
+              direction="bottom"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-pink-200 via-white to-pink-200 italic justify-center mt-2"
+            />
           </h1>
 
           {/* Subheadline - Scaled Down & tighter margin */}
@@ -73,12 +84,12 @@ const Hero: React.FC = () => {
           </p>
 
           {/* CTA Buttons - Slightly reduced padding */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto pb-8 md:pb-10">
             <a href={waLink} target="_blank" rel="noreferrer" className="w-full sm:w-auto group">
               <Button
-                size="lg"
+                size="md"
                 variant="white"
-                className="w-full sm:w-auto border-none px-8 py-4 text-base shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:shadow-[0_0_40px_rgba(219,39,119,0.5)] rounded-full font-bold tracking-wide transition-all duration-500"
+                className="w-full sm:w-auto sm:min-w-[200px] border-none shadow-lg hover:shadow-xl font-semibold tracking-wide"
               >
                 <MessageCircle className="mr-2 inline-block" size={18} />
                 Semak Tarikh 2026
@@ -86,9 +97,9 @@ const Hero: React.FC = () => {
             </a>
             <Link to="/packages" className="w-full sm:w-auto">
               <Button
-                size="lg"
+                size="md"
                 variant="outline"
-                className="w-full sm:w-auto border-white/40 text-white hover:bg-white/10 hover:border-white px-8 py-4 text-base backdrop-blur-sm rounded-full tracking-wide"
+                className="w-full sm:w-auto sm:min-w-[200px] border-white/50 text-white hover:bg-white/10 hover:border-white backdrop-blur-sm font-semibold tracking-wide"
               >
                 Lihat Katalog Pakej
               </Button>
