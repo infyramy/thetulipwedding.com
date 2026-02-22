@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
   }, [shuffledImages]);
 
   return (
-    <div className="relative min-h-[105svh] md:min-h-[115svh] w-full overflow-hidden flex items-center justify-center bg-charcoal pb-48 md:pb-64">
+    <div className="relative min-h-[105svh] md:min-h-[115svh] w-full overflow-hidden flex flex-col items-center bg-charcoal pb-48 md:pb-64">
       {/* Cinematic Background Slideshow */}
       <div className="absolute inset-0 z-0">
         {/* Dark overlay for perfect text contrast */}
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-30 container mx-auto px-4 mt-16 md:mt-24 pt-32 md:pt-40 lg:pt-32 text-center text-white flex flex-col items-center justify-center min-h-screen">
+      <div className="relative z-30 container mx-auto px-4 mt-8 md:mt-12 pt-40 md:pt-56 lg:pt-48 text-center text-white flex flex-col items-center flex-grow">
         <div className="max-w-5xl w-full mx-auto flex flex-col items-center animate-fade-in-up">
 
           {/* Authority Tagline */}
