@@ -16,6 +16,7 @@ interface BlurTextProps {
     delay?: number;
     globalDelay?: number;
     className?: string;
+    textClassName?: string;
     animateBy?: 'words' | 'letters';
     direction?: 'top' | 'bottom';
     threshold?: number;
@@ -32,6 +33,7 @@ const BlurText: React.FC<BlurTextProps> = ({
     delay = 200,
     globalDelay = 0,
     className = '',
+    textClassName = '',
     animateBy = 'words',
     direction = 'top',
     threshold = 0.1,
@@ -100,7 +102,7 @@ const BlurText: React.FC<BlurTextProps> = ({
 
                 return (
                     <motion.span
-                        className="inline-block will-change-[transform,filter,opacity]"
+                        className={`inline-block will-change-[transform,filter,opacity] ${textClassName}`}
                         key={index}
                         initial={fromSnapshot}
                         animate={inView ? animateKeyframes : fromSnapshot}

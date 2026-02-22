@@ -75,7 +75,8 @@ const Hero: React.FC = () => {
               globalDelay={1.4}
               animateBy="words"
               direction="bottom"
-              className="text-transparent bg-clip-text bg-gradient-to-r from-pink-200 via-white to-pink-200 italic flex justify-center flex-wrap mt-2"
+              className="flex justify-center flex-wrap mt-2 italic"
+              textClassName="text-transparent bg-clip-text bg-gradient-to-r from-pink-200 via-white to-pink-200"
             />
           </h1>
 
