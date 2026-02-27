@@ -66,7 +66,7 @@ const About: React.FC = () => {
       {/* STORY SECTION - Focus on Customer Journey */}
       <Section bgColor="silver" className="relative overflow-hidden">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row gap-16 items-center">
-          <div className="lg:w-1/2 relative">
+          <div className="w-full lg:w-1/2 relative">
             {/* Main Image Slideshow */}
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-all duration-500 border-4 border-white h-[400px] md:h-[500px] bg-white group">
               {showcaseImages.map((img, idx) => (
@@ -80,7 +80,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2">
+          <div className="w-full lg:w-1/2">
             <span className="text-pink-600 font-bold tracking-widest uppercase text-sm mb-3 block">Tentang Kami</span>
             <h3 className="font-serif text-4xl md:text-5xl font-bold text-charcoal mb-6 tracking-tight">Siapa Kami?</h3>
             <div className="text-gray-600 leading-relaxed text-lg space-y-6 text-justify font-light">
