@@ -5,21 +5,69 @@ import { ArrowDown, MessageCircle, Award } from 'lucide-react';
 import { WHATSAPP_NUMBER } from '../constants';
 import BlurText from './BlurText';
 
-const HERO_IMAGES = [
+const DESKTOP_HERO_IMAGES = [
   "/assets/images/bridal/decoration-pelamin-01.jpg",
   "/assets/images/hero/hero-hall-bg.jpg",
   "/assets/images/hero/kanopi-setup-04.jpg",
-  "/assets/images/hero/hero-wedding-04.jpg"
+  "/assets/images/hero/hero-wedding-04.jpg",
+  "/assets/images/hero/hero-new1.jpg",
+  "/assets/images/hero/hero-new2.jpg"
 ];
+
+const MOBILE_HERO_IMAGES = DESKTOP_HERO_IMAGES.filter(
+  (src) => src !== "/assets/images/bridal/decoration-pelamin-01.jpg"
+);
+
+const getIsDesktop = () => {
+  if (typeof window === 'undefined') {
+    return true;
+  }
+
+  return window.matchMedia('(min-width: 768px)').matches;
+};
+
+const shuffleImages = (images: string[]) => [...images].sort(() => Math.random() - 0.5);
 
 const Hero: React.FC = () => {
   const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=Assalamualaikum, saya nak check tarikh kosong untuk majlis tahun 2026. Boleh?`;
 
-  // Initialize with a randomized order
-  const [shuffledImages] = useState(() => [...HERO_IMAGES].sort(() => Math.random() - 0.5));
+  const [isDesktop, setIsDesktop] = useState(getIsDesktop);
+  const [shuffledImages, setShuffledImages] = useState(() =>
+    shuffleImages(getIsDesktop() ? DESKTOP_HERO_IMAGES : MOBILE_HERO_IMAGES)
+  );
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
+    const handleChange = () => setIsDesktop(mediaQuery.matches);
+
+    handleChange();
+
+    if (typeof mediaQuery.addEventListener === 'function') {
+      mediaQuery.addEventListener('change', handleChange);
+      return () => mediaQuery.removeEventListener('change', handleChange);
+    }
+
+    mediaQuery.addListener(handleChange);
+    return () => mediaQuery.removeListener(handleChange);
+  }, []);
+
+  useEffect(() => {
+    setShuffledImages(
+      shuffleImages(isDesktop ? DESKTOP_HERO_IMAGES : MOBILE_HERO_IMAGES)
+    );
+    setCurrentImageIndex(0);
+  }, [isDesktop]);
+
+  useEffect(() => {
+    if (shuffledImages.length <= 1) {
+      return;
+    }
+
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % shuffledImages.length);
     }, 5000); // Change image every 5 seconds

@@ -119,7 +119,7 @@ const Home: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-all duration-700 group">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-60 z-10"></div>
                 <img
-                  src="/assets/images/hero/hero-wedding-11.jpg"
+                  src="/assets/images/hero/hero-new2.jpg"
                   alt="Wedding Decoration"
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-1000"
                 />

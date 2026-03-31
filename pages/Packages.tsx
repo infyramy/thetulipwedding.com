@@ -142,7 +142,7 @@ const PACKAGES_LIST = [
     title: 'Pakej Ekonomi',
     price: 'RM 15,200',
     pax: '500 Pax',
-    image: '/assets/images/hero/hero-wedding-11.jpg',
+    image: '/assets/images/hero/hero-new2.jpg',
     desc: 'Bajet rendah? Tiada masalah. Pakej ini lengkap keperluan asas majlis.',
     includes: [
       '4 Set Khemah Arabian',

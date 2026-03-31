@@ -11,7 +11,8 @@ const About: React.FC = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const showcaseImages = [
     "/assets/images/contact/boutique-exterior-01.jpg",
-    "/assets/images/contact/boutique-exterior-02.jpg"
+    "/assets/images/contact/boutique-exterior-02.jpg",
+    "/assets/images/contact/boutique-baru.jpg"
   ];
 
   const teamImages = [
